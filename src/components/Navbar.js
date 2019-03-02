@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import github from '../img/github-icon.svg'
 import logo from '../img/CandidLabsLogo.png'
 
 const Navbar = class extends React.Component {
@@ -64,6 +63,16 @@ const Navbar = class extends React.Component {
                 Support
               </Link>
             </div>
+            <div className="navbar-end has-text-centered">
+              <a
+                className="navbar-item"
+                href="https://volker.candidlabs.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+              Login
+              </a>
+            </div>      
           </div>
         </div>
       </nav>
