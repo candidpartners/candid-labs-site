@@ -36,7 +36,7 @@ const SuportPage = ({ data }) => {
 
   return (
     <Layout>
-      <AboutPageTemplate
+      <SupportPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
