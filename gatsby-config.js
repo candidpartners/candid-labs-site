@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Candid Labs',
     description:
-      'Candid Labs provide Cloud Automation and DevOps software to plan, provision, and ensure cloud deployments are compliant',
+      'Candid Labs provides Cloud Automation and DevOps software to plan, provision, and ensure cloud deployments are compliant',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
