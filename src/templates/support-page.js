@@ -25,7 +25,7 @@ export const SupportPageTemplate = ({ title, content, contentComponent }) => {
   )
 }
 
-SuportPageTemplate.propTypes = {
+SupportPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
