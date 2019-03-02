@@ -1,21 +1,22 @@
 ---
 templateKey: index-page
 title: Cloud Without Confusion
-image: /img/tragic-and-comic-masks-010.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+image: /img/fast.jpg
+heading: Migrate to the Cloud. Fast.
+subheading: Volker Cloud Automation Platform
 mainpitch:
-  title: Why Kaldi
+  title: Why Volker
   description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    The Volker Cloud Automation Platform provides DevOps and migration teams
+    with Planning, Provisioning, and Compliance capabilities to facilitate
+    factory scale cloud initiatives. As an integral part of Candid Cloud
+    Factory, Volker makes it easy to specify and auto-generate the
+    infrastructure components you want to deploy, allowing enterprises to
+    transition to the cloud efficiently, consistently, and securely.
 description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  Volker leads your organization into the cloud efficiently, consistently, and
+  securely; speeding your initiatives through its programmatic approach to
+  Planning, Provisioning, and Compliance.
 intro:
   blurbs:
     - image: /img/coffee.png
@@ -47,10 +48,8 @@ intro:
         sale. The full price you pay goes to the artist.
   heading: What we offer
   description: >
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone. This is an edit via identity...
+    Volker is the ultimate cloud automation solution that provides automation
+    for every step of the cloud migration process.
 main:
   heading: Great coffee with no compromises
   description: >
