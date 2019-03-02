@@ -1,9 +1,10 @@
 {
-  "name": "gatsby-starter-netlify-cms",
-  "description": "Example Gatsby, and Netlify CMS project",
+  "name": "candid-labs-site",
+  "description": "Candid Labs Website",
   "version": "1.1.3",
-  "author": "Austin Green",
+  "author": "Aaron Bawcom",
   "dependencies": {
+    "react-intercom": "^1.0.15",
     "bulma": "^0.7.0",
     "gatsby": "^2.0.66",
     "gatsby-image": "^2.0.23",
@@ -31,7 +32,7 @@
     "uuid": "^3.2.1"
   },
   "keywords": [
-    "gatsby"
+    "volker"
   ],
   "license": "MIT",
   "main": "n/a",
