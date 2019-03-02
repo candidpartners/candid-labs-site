@@ -7,45 +7,35 @@ subheading: Volker Cloud Automation Platform
 mainpitch:
   title: Why Volker
   description: >
-    The Volker Cloud Automation Platform provides DevOps and migration teams
-    with Planning, Provisioning, and Compliance capabilities to facilitate
-    factory scale cloud initiatives. As an integral part of Candid Cloud
-    Factory, Volker makes it easy to specify and auto-generate the
-    infrastructure components you want to deploy, allowing enterprises to
-    transition to the cloud efficiently, consistently, and securely.
+    Candid Labs provides cloud automation software that helps organizations plan
+    their journey to the cloud, provision cloud based infrastructure resources
+    using DevOps best practices, and ensure those resources are secure before
+    they are ever deployed to the cloud and continually after they are deployed.
 description: >-
-  Volker leads your organization into the cloud efficiently, consistently, and
-  securely; speeding your initiatives through its programmatic approach to
-  Planning, Provisioning, and Compliance.
+  The Volker Cloud Automation Platform provides DevOps and migration teams with
+  Planning, Provisioning, and Compliance capabilities to facilitate factory
+  scale cloud initiatives. As an integral part of Candid Cloud Factory, Volker
+  makes it easy to specify and auto-generate the infrastructure components you
+  want to deploy, allowing enterprises to transition to the cloud efficiently,
+  consistently, and securely.
 intro:
   blurbs:
-    - image: /img/coffee.png
+    - image: /img/plan.jpg
+      text: >-
+        Volker makes it easy for IT teams to characterize every application and
+        server. Leveraging an industry-defining programmatic approach, Volker
+        creates a view of the relative business value of each application and
+        the complexity of migrating the applications to the cloud.
+    - image: /img/build.jpg
       text: >
-        We sell green and roasted coffee beans that are sourced directly from
-        independent farmers and farm cooperatives. We’re proud to offer a
-        variety of coffee beans grown with great care for the environment and
-        local communities. Check our post or contact us directly for current
-        availability.
-    - image: /img/coffee-gear.png
+        Generating the code required to accomplish the necessary application and
+        account level setup, Volker creates and configures your infrastructure,
+        so your application teams can directly integrate their code.
+    - image: /img/secure.jpg
       text: >
-        We offer a small, but carefully curated selection of brewing gear and
-        tools for every taste and experience level. No matter if you roast your
-        own beans or just bought your first french press, you’ll find a gadget
-        to fall in love with in our shop.
-    - image: /img/tutorials.png
-      text: >
-        Love a great cup of coffee, but never knew how to make one? Bought a
-        fancy new Chemex but have no clue how to use it? Don't worry, we’re here
-        to help. You can schedule a custom 1-on-1 consultation with our baristas
-        to learn anything you want to know about coffee roasting and brewing.
-        Email us or call the store for details.
-    - image: /img/meeting-space.png
-      text: >
-        We believe that good coffee has the power to bring people together.
-        That’s why we decided to turn a corner of our shop into a cozy meeting
-        space where you can hang out with fellow coffee lovers and learn about
-        coffee making techniques. All of the artwork on display there is for
-        sale. The full price you pay goes to the artist.
+        Volker adds automation steps within a CI/CD pipeline to ensure the
+        infrastructure, configuration, and software meet compliance standards
+        before they are ever deployed.
   heading: What we offer
   description: >
     Volker is the ultimate cloud automation solution that provides automation
