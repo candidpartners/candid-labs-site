@@ -1,4 +1,2 @@
-/*
-  Basic-Auth: candid:welcome19
 /static/*
   Cache-Control = "public, max-age=360000"
