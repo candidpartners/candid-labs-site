@@ -1,19 +1,21 @@
 ---
-templateKey: 'about-page'
-path: /about
+templateKey: about-page
 title: About our values
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+### Automate. Everything.
 
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+We believe that the process of turning tribal knowledge of software applications into data that can be prioritized, converted into infrastructure as code, deployed, secured, scaled, and optimized in the cloud can be automated.
 
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+### Solve. Difficult. Problems.
 
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
+We all know that the most challenging problems to solve are human problems. It turns out that intelligent data and working software can significantly change how people think about cloud migrations. That's the hill we plan on climbing.
 
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+### Independence. Agility. Empowerment.
+
+In 2014 Gartner's Ed Holub proclaimed to 1000 CIO's "Your biggest threat is not the competitor on our magic quadrant. Your biggest threat is a smart kid with a credit card in a cloud account building a great idea". We believe that enabling individuals to create significantly capable cloud based applications with ease is at the core of innovation within your organization.
+
+### Prevent. Security. Failures.
+
+We believe the most secure applications in the world run in the cloud. The ability to deploy applications using infrastructure as code for the first time in history allows us the catch security problems before they ever happen. Gone are the days of accidentally opening up access to sensitive data. New security technology allows organizations the ability to lock down applications and at the same time allow application developers to innovate at the own rate of rapid development.
+
+###
