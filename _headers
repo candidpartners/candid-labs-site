@@ -1,7 +1,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Basic-Auth: someuser:somepassword anotheruser:anotherpassword
+    Basic-Auth: candid:welcome19
   for = "/static/*"
     [headers.values]
       Cache-Control = "public, max-age=360000"
