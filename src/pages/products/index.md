@@ -1,14 +1,15 @@
 ---
-templateKey: 'product-page'
-path: /products
-title: Our Coffee
-image: /img/jumbotron.jpg
-heading: Great coffee with a conscience
+templateKey: product-page
+title: Volker
+image: /img/rockets.jpg
+heading: Enterprise Cloud Automation
 description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  The Volker Cloud Automation Platform provides DevOps and migration teams with
+  Planning, Provisioning, and Compliance capabilities to facilitate factory
+  scale cloud initiatives. As an integral part of Candid Cloud Factory, Volker
+  makes it easy to specify and auto-generate the infrastructure components you
+  want to deploy, allowing enterprises to transition to the cloud efficiently,
+  consistently, and securely.
 intro:
   blurbs:
     - image: /img/coffee.png
@@ -99,3 +100,4 @@ pricing:
       plan: Custom
       price: '??'
 ---
+
