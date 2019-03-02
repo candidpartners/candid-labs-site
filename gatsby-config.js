@@ -8,6 +8,13 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
+      resolve: 'gatsby-plugin-intercom-spa',
+      options: {
+        app_id: 'pf7pkmzi',
+        include_in_development: false,
+      }
+    },    
+    {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
       options: {
