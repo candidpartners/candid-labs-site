@@ -1,27 +1,26 @@
 ---
 templateKey: blog-post
-title: A beginners’ guide to brewing with Chemex
+title: A beginners’ guide to Infrastructure as Code
 date: 2017-01-04T15:04:10.000Z
-description: Brewing with a Chemex probably seems like a complicated, time-consuming ordeal, but once you get used to the process, it becomes a soothing ritual that's worth the effort every time.
+description: >-
+  Infrastructure as code (IaC) is the process of managing and provisioning
+  computing resources through machine-readable definition files, rather than
+  physical hardware configuration or interactive configuration tools. The
+  definitions are intended to be managed just like software in a version control
+  system. It can use either scripts or declarative definitions, rather than
+  manual processes, but the term is more often used to promote declarative
+  approaches. IaC approaches are highly promoted for cloud computing.
 tags:
-  - brewing
-  - chemex
+  - Infrastructure as Code
 ---
-![chemex](/img/chemex.jpg)
+![Infrastructure as Code](/img/iac.png)
 
-This week we’ll **take** a look at all the steps required to make astonishing coffee with a Chemex at home. The Chemex Coffeemaker is a manual, pour-over style glass-container coffeemaker that Peter Schlumbohm invented in 1941, and which continues to be manufactured by the Chemex Corporation in Chicopee, Massachusetts.
+Infrastructure and operations as code is an essential practice for realizing the advantages of modern clouds.  For enterprises looking to migrate to Amazon Web Services, Azure, or Google Cloud Platform, scripted infrastructure and automation are the key first steps through which other devops practices become accessible.  This post will enumerate some key benefits that become possible once we embrace infrastructure as code practices.
 
-In 1958, designers at the [Illinois Institute of Technology](https://www.spacefarm.digital) said that the Chemex Coffeemaker is _"one of the best-designed products of modern times"_, and so is included in the collection of the Museum of Modern Art in New York City.
+By codifying our infrastructure, we enable better testing and quality control, more efficient and predictable deployments, and decreased recovery times. It provides improved testability and monitoring, lowers the cost of experimentation and innovation, makes deployments more predictable, and decreases the mean time to resolution (MTTR) for issues.
 
-## The little secrets of Chemex brewing
+## Automate your deployment and recovery processes
 
-The Chemex Coffeemaker consists of an hourglass-shaped glass flask with a conical funnel-like neck (rather than the cylindrical neck of an Erlenmeyer flask) and uses proprietary filters, made of bonded paper (thicker-gauge paper than the standard paper filters for a drip-method coffeemaker) that removes most of the coffee oils, brewing coffee with a taste that is different than coffee brewed in other coffee-making systems; also, the thicker paper of the Chemex coffee filters may assist in removing cafestol, a cholesterol-containing compound found in coffee oils. Here’s three important tips newbies forget about:
+With infrastructure automation, reproducible environments become possible.  We can use the same automation scripts to deploy exact copies of production to development, test, and production environments.  With these consistent deployments, we are able to achieve the ever-elusive development-to-prod parity, finally putting an end to the “it worked on my machine!” problems.
 
-1. Always buy dedicated Chemex filters.
-2. Use a scale, don’t try to eyeball it.
-3. Never skip preheating the glass.
-4. Timing is key, don’t forget the clock.
-
-The most visually distinctive feature of the Chemex is the heatproof wooden collar around the neck, allowing it to be handled and poured when full of hot water. This is turned, then split in two to allow it to fit around the glass neck. The two pieces are held loosely in place by a tied leather thong. The pieces are not tied tightly and can still move slightly, retained by the shape of the conical glass.
-
-For a design piece that became popular post-war at a time of Modernism and precision manufacture, this juxtaposition of natural wood and the organic nature of a hand-tied knot with the laboratory nature of glassware was a distinctive feature of its appearance.
+The pinnacle of infrastructure automation is the Blue/Green deployment strategy.  This strategy enables zero downtime deployments and allows us to run live tests before releasing our changes to our users.  Blue/Green Deployments take advantage of our ability to run exact copies of our environments in parallel.  By controlling when traffic is routed to our new copy, we can defer a release until we are 100% confident that our new environment is ready.
