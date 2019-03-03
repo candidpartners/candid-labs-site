@@ -54,44 +54,48 @@ main:
     journey. We personally visit each farm to make sure the conditions are
     optimal for the plants, farmers and the local environment.
   image1:
-    alt: A close-up of a paper filter filled with ground coffee
-    image: /img/products-grid3.jpg
+    alt: Compliance Frameworks
+    image: /img/frameworks.png
   image2:
-    alt: A green cup of a coffee on a wooden table
-    image: /img/products-grid2.jpg
+    alt: Scoring
+    image: /img/scoring.png
   image3:
     alt: Coffee beans
-    image: /img/products-grid1.jpg
+    image: /img/networking.png
 testimonials:
-  - author: Elisabeth Kaurismäki
+  - author: 'VP of Platform and Cloud Services, Top 20 Bank'
     quote: >-
-      The first time I tried Kaldi’s coffee, I couldn’t even believe that was
-      the same thing I’ve been drinking every morning.
-  - author: Philipp Trommler
+      It's like having an army of virtual DevOps engineers that turn cloud
+      migration into a Factory
+  - author: 'VP of Security, Credit Card processing company'
     quote: >-
-      Kaldi is the place to go if you want the best quality coffee. I love their
-      stance on empowering farmers and transparency.
-full_image: /img/products-full-width.jpg
+      For the first time I can catch security problems BEFORE they are deployed
+      to the cloud as well as continually monitor after they have been deployed
+      with the same policy. I can now sleep at night and the development teams
+      love it!
+full_image: /img/accounts.png
 pricing:
   heading: Monthly subscriptions
   description: >-
-    We make it easy to make great coffee a part of your life. Choose one of our
-    monthly subscription plans to receive great coffee at your doorstep each
-    month. Contact us about more details and payment info.
+    We offer a Small introductory monthly pricing plan and an Enterprise plan
+    for the software delivered as a SaaS solution
   plans:
-    - description: Perfect for the drinker who likes to enjoy 1-2 cups per day.
+    - description: Perfect to try out moving a small number of applications
       items:
-        - 3 lbs of coffee per month
-        - Green or roasted beans"
-        - One or two varieties of beans"
+        - Import up to 100 of your existing servers for analysis
+        - Generate Terraform 10 times for an Application
+        - Generate Terraform 10 times for up to 5 AWS accounts
+        - Run CIS compliance in your pipeline and live accounts
       plan: Small
-      price: '50'
-    - description: Want a few tiny batches from different varieties? Try our custom plan
+      price: '500'
+    - description: >-
+        Talk with us and find out how to migrate hundreds of applications within
+        your organization
       items:
-        - Whatever you need
-        - Green or roasted beans
-        - Unlimited varieties
+        - Integration with CI/CD systems
+        - Analyze thousands of servers
+        - Unlimited Terraform generation
       plan: Custom
-      price: '??'
+      price: '?'
 ---
 
