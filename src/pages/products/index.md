@@ -47,12 +47,11 @@ intro:
     infrastructure components you want to deploy, allowing enterprises to
     transition to the cloud efficiently, consistently, and securely.
 main:
-  heading: Great coffee with no compromises
+  heading: Cloud DevOps for the Enterprise
   description: >
-    We hold our coffee to the highest standards from the shrub to the cup.
-    That’s why we’re meticulous and transparent about each step of the coffee’s
-    journey. We personally visit each farm to make sure the conditions are
-    optimal for the plants, farmers and the local environment.
+    We are enabling large enterprise organizations to change their way of
+    delivering technology that is modern, fast, and significantly less costly to
+    maintain.
   image1:
     alt: Compliance Frameworks
     image: /img/frameworks.jpg
