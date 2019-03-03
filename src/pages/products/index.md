@@ -15,12 +15,12 @@ intro:
         multiple prioritization models based on business value and application
         complexity so that you can gain the right insight across all of the
         applications you need to migrate.
-    - image: /img/coffee-gear.png
+    - image: /img/questions.png
       text: >
-        We offer a small, but carefully curated selection of brewing gear and
-        tools for every taste and experience level. No matter if you roast your
-        own beans or just bought your first french press, you’ll find a gadget
-        to fall in love with in our shop.
+        Understanding the applications that run in your organization is critical
+        to moving them to the cloud. Volker comes with over 100 industry proven
+        questions for understanding the specifics of your applications and
+        allows you to customize those questions as well.
     - image: /img/tutorials.png
       text: >
         Love a great cup of coffee, but never knew how to make one? Bought a
