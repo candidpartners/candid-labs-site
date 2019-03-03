@@ -55,8 +55,7 @@ main:
     optimal for the plants, farmers and the local environment.
   image1:
     alt: Compliance Frameworks
-    image: >-
-      https://raw.githubusercontent.com/candidpartners/candid-labs-site/master/static/img/products-grid2.jpg
+    image: /img/frameworks.png
   image2:
     alt: Scoring
     image: /img/scoring.png
