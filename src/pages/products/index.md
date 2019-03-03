@@ -21,13 +21,14 @@ intro:
         to moving them to the cloud. Volker comes with over 100 industry proven
         questions for understanding the specifics of your applications and
         allows you to customize those questions as well.
-    - image: /img/tutorials.png
+    - image: /img/map.png
       text: >
-        Love a great cup of coffee, but never knew how to make one? Bought a
-        fancy new Chemex but have no clue how to use it? Don't worry, we’re here
-        to help. You can schedule a custom 1-on-1 consultation with our baristas
-        to learn anything you want to know about coffee roasting and brewing.
-        Email us or call the store for details.
+        Understanding the IT assets that your organization has across all of
+        your data centers is crucial to ensuring your applications will run
+        effectively in the cloud. Volker offers the ability to map your existing
+        server assets into geographic locations so that you can analyze latency
+        dependencies between your existing data centers and your new cloud based
+        operational regions.
     - image: /img/meeting-space.png
       text: >
         We believe that good coffee has the power to bring people together.
