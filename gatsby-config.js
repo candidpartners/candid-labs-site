@@ -6,6 +6,15 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-134601708-1",
+        // Puts tracking script in the head instead of the body
+        head: false,
+        cookieDomain: "candidlabs.io",
+      },
+    },    
     'gatsby-plugin-sass',
     {
       resolve: 'gatsby-plugin-intercom-spa',
