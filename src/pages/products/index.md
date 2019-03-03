@@ -29,13 +29,15 @@ intro:
         server assets into geographic locations so that you can analyze latency
         dependencies between your existing data centers and your new cloud based
         operational regions.
-    - image: /img/meeting-space.png
+    - image: /img/futurestates.png
       text: >
-        We believe that good coffee has the power to bring people together.
-        That’s why we decided to turn a corner of our shop into a cozy meeting
-        space where you can hang out with fellow coffee lovers and learn about
-        coffee making techniques. All of the artwork on display there is for
-        sale. The full price you pay goes to the artist.
+        There are so many options for migrating an application to the cloud that
+        it can stall many cloud migration projects getting everyone involved to
+        understand the pros and cons for different approaches. To make this
+        process more simple, Volker provides a consistent team based approach to
+        evaluating the time, financial, and resource based constraints across
+        multiple migration approaches so that the right approach is chosen and
+        understood by the entire team.
   heading: What we offer
   description: >
     The Volker Cloud Automation Platform provides DevOps and migration teams
