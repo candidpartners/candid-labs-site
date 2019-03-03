@@ -169,16 +169,6 @@ export const productPageQuery = graphql`
         main {
           heading
           description
-          image1 {	
-            alt	
-            image {	
-              childImageSharp {	
-                fluid(maxWidth: 526, quality: 92) {	
-                  ...GatsbyImageSharpFluid	
-                }	
-              }	
-            }	
-          }          
         }
         testimonials {
           author
