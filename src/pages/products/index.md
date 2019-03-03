@@ -55,7 +55,7 @@ main:
     optimal for the plants, farmers and the local environment.
   image1:
     alt: Compliance Frameworks
-    image: /img/frameworks.png
+    image: /img/frameworks.jpg
   image2:
     alt: Scoring
     image: /img/scoring.png
