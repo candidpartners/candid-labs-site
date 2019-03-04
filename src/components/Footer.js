@@ -26,44 +26,31 @@ const Footer = class extends React.Component {
                     <ul className="menu-list">
                       <li><Link to="/" className="navbar-item">Home</Link></li>
                       <li><Link className="navbar-item" to="/about">About</Link></li>
-                      <li><Link className="navbar-item" to="/products">
-                        Products
-                      </Link>
-                    </li>
-                    <li>
-                    <Link className="navbar-item" to="/privacy">
-                      Privacy Policy
-                    </Link>
-                    </li>
-                    <li><a
-                      className="navbar-item"
-                      href="/admin/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Admin
-                    </a></li>
+                      <li><Link className="navbar-item" to="/products">Products</Link></li>
+                      <li>
+                        <a
+                          className="navbar-item"
+                          href="/admin/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Admin
+                        </a>
+                      </li>
                     </ul>
                   </section>
                 </div>
                 <div className="column is-4">
-                <section>
-                  <ul className="menu-list">
-                  <li>
-                    <Link className="navbar-item" to="/blog">
-                      Latest Stories
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="navbar-item" to="/contact">
-                      Contact
-                    </Link>
-                  </li>
-                  </ul>
-                </section>
+                  <section>
+                    <ul className="menu-list">
+                      <li><Link className="navbar-item" to="/blog">Blog</Link></li>
+                      <li><Link className="navbar-item" to="/contact">Contact</Link></li>
+                      <li><Link className="navbar-item" to="/privacy">Privacy Policy</Link></li>
+                      <li><Link className="navbar-item" to="/volker-eula">Volker EULA</Link></li>
+                    </ul>
+                  </section>
                 </div>
                 <div className="column is-4 social">
-                
                   <a title="facebook" href="https://facebook.com">
                     <img 
                       src={facebook}
