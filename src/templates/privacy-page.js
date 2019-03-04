@@ -50,7 +50,7 @@ export const PrivacyPageQuery = graphql`
   query PrivacyPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
-      frontmatter
+      frontmatter{ ... }
     }
   }
 `
