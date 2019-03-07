@@ -21,7 +21,7 @@ description: >-
   consistently, and securely.
 intro:
   blurbs:
-    - image: /img/plan.jpg
+    - image: /img/volker.png
       text: >-
         Volker makes it easy for IT teams to characterize every application and
         server. Leveraging an industry-defining programmatic approach, Volker
