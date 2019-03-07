@@ -6,11 +6,11 @@ title: About our values
 
 ## **Automate. Everything.**
 
-We believe that turning tribal knowledge of software applications into data that can be prioritized, converted into infrastructure as code, deployed, secured, scaled, and optimized in the cloud can all be automated.
+We believe that the process of turning tribal knowledge of software applications into data that can be prioritized, converted into infrastructure as code, deployed, secured, scaled, and optimized in the cloud can be automated.
 
 ## Solve. Difficult. Problems.
 
-We all know that the most challenging problems to solve are human problems. It turns out that intelligent data and working software can significantly change how people think about cloud migrations. That's the summit we plan to scale.
+We all know that the most challenging problems to solve are human problems. It turns out that intelligent data and working software can significantly change how people think about cloud migrations. That's the hill we plan on climbing.
 
 ## Independence. Agility. Empowerment.
 
