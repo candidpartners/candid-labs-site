@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
 export const RefundPageTemplate = ({ title, content, contentComponent }) => {
-  const RefundContent = contentComponent || Content
+  const PageContent = contentComponent || Content
 
   return (
     <section className="section section--gradient">
