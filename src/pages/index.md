@@ -28,14 +28,12 @@ intro:
     Volker is the ultimate cloud automation solution that provides automation
     for every step of the cloud migration process.
 main:
-  heading: Migration Simplified
-  description: >-
-    Volker simplifies migration planning by collecting all details needed for a
-    migration, automating the prioritization, and applying a decision engine to
-    identify optimal migration patterns for each application. With the Volker
-    planning module, scores and prioritizes applications based on business value
-    and complexity and enable you to methodically plan for your migration to the
-    cloud.
+  heading: Great coffee with no compromises
+  description: >
+    We hold our coffee to the highest standards from the shrub to the cup.
+    That’s why we’re meticulous and transparent about each step of the coffee’s
+    journey. We personally visit each farm to make sure the conditions are
+    optimal for the plants, farmers and the local environment.
   image1:
     alt: A close-up of a paper filter filled with ground coffee
     image: /img/products-grid3.jpg
