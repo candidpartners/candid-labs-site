@@ -23,6 +23,16 @@ intro:
   blurbs:
     - image: /img/volker.png
       text: '. '
+    - image: /img/build.jpg
+      text: >
+        Generating the code required to accomplish the necessary application and
+        account level setup, Volker creates and configures your infrastructure,
+        so your application teams can directly integrate their code.
+    - image: /img/secure.jpg
+      text: >
+        Volker adds automation steps within a CI/CD pipeline to ensure the
+        infrastructure, configuration, and software meet compliance standards
+        before they are ever deployed.
   heading: What we offer
   description: >
     Volker is the ultimate cloud automation solution that provides automation
