@@ -22,11 +22,7 @@ description: >-
 intro:
   blurbs:
     - image: /img/volker.png
-      text: >-
-        Volker makes it easy for IT teams to characterize every application and
-        server. Leveraging an industry-defining programmatic approach, Volker
-        creates a view of the relative business value of each application and
-        the complexity of migrating the applications to the cloud.
+      text: '. '
     - image: /img/build.jpg
       text: >
         Generating the code required to accomplish the necessary application and
