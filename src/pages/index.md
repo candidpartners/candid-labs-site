@@ -1,8 +1,7 @@
 ---
 templateKey: index-page
 title: Cloud Without Confusion
-image: >-
-  https://raw.githubusercontent.com/candidpartners/candid-labs-site/master/static/img/dapper.jpg
+image: /img/fast.jpg
 heading: Migrate to the Cloud. Fast.
 subheading: Volker Cloud Automation Platform
 mainpitch:
