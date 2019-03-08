@@ -1,9 +1,7 @@
 ---
 templateKey: index-page
-title: Cloud Without Confusion
 image: /img/dapper.jpg
 heading: Migrate to the Cloud. Fast.
-subheading: Volker Cloud Automation Platform
 mainpitch:
   title: Why Volker
   description: >
