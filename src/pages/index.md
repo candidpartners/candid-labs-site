@@ -1,6 +1,8 @@
 ---
 templateKey: index-page
+title: ""
 image: /img/dapper.jpg
+subheading: ""
 heading: Migrate to the Cloud. Fast.
 mainpitch:
   title: Why Volker
