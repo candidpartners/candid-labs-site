@@ -19,6 +19,24 @@ description: >-
   want to deploy, allowing enterprises to transition to the cloud efficiently,
   consistently, and securely.
   heading: What we offer
+  intro:
+  blurbs:
+    - image: /img/plan.jpg
+      text: >-
+        Volker makes it easy for IT teams to characterize every application and
+        server. Leveraging an industry-defining programmatic approach, Volker
+        creates a view of the relative business value of each application and
+        the complexity of migrating the applications to the cloud.
+    - image: /img/build.jpg
+      text: >
+        Generating the code required to accomplish the necessary application and
+        account level setup, Volker creates and configures your infrastructure,
+        so your application teams can directly integrate their code.
+    - image: /img/secure.jpg
+      text: >
+        Volker adds automation steps within a CI/CD pipeline to ensure the
+        infrastructure, configuration, and software meet compliance standards
+        before they are ever deployed.
   description: >
     Volker is the ultimate cloud automation solution that provides automation
     for every step of the cloud migration process.
