@@ -18,8 +18,7 @@ description: >-
   makes it easy to specify and auto-generate the infrastructure components you
   want to deploy, allowing enterprises to transition to the cloud efficiently,
   consistently, and securely.
-  heading: What we offer
-  intro:
+intro:
   blurbs:
     - image: /img/plan.jpg
       text: >-
@@ -37,6 +36,7 @@ description: >-
         Volker adds automation steps within a CI/CD pipeline to ensure the
         infrastructure, configuration, and software meet compliance standards
         before they are ever deployed.
+  heading: What we offer
   description: >
     Volker is the ultimate cloud automation solution that provides automation
     for every step of the cloud migration process.
