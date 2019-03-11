@@ -1,9 +1,10 @@
 ---
 templateKey: index-page
-title: ""
-image: /img/dapper.jpg
-subheading: ""
+title: Volker
+image: >-
+  https://raw.githubusercontent.com/candidpartners/candid-labs-site/master/static/img/fast.jpg
 heading: Migrate to the Cloud. Fast.
+subheading: Cloud Automation Platform
 mainpitch:
   title: Why Volker
   description: >
@@ -36,6 +37,8 @@ intro:
         Volker adds automation steps within a CI/CD pipeline to ensure the
         infrastructure, configuration, and software meet compliance standards
         before they are ever deployed.
+  heading: From Planning to Migration
+  description: Volker automates the entire process
 main:
   heading: Great coffee with no compromises
   description: >
@@ -53,3 +56,4 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 ---
+
