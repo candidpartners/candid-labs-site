@@ -38,77 +38,36 @@ intro:
         evaluating the time, financial, and resource based constraints across
         multiple migration approaches so that the right approach is chosen and
         understood by the entire team.
-  heading: What we offer
-  description: >+
-    The Volker Cloud Automation Platform provides DevOps and migration teams
-    with Planning, Provisioning, and Compliance capabilities to facilitate
-    factory scale cloud initiatives. As an integral part of Candid Cloud
-    Factory, Volker makes it easy to specify and auto-generate the
-    infrastructure components you want to deploy, allowing enterprises to
-    transition to the cloud efficiently, consistently, and securely.
-
-
-    60% of cloud initiatives fail — Every Candid client is in the other 40%
-
-    Volker Differentiators: 
-
-    1. Volker is the only enterprise end-to-end multi-cloud automation
-    solution  
-
-    2. Volker is the most effective tool in automating repetitive and manual dev
-    ops activities 
-
-    3. Volker is the only tool that automates all three vital aspects of an
-    enterprise migration – Planning, Provisioning, and Compliance
-
-    4. Volker is the only tool that automates all six stages of the journey to
-    cloud 
-       - Business evaluation
-       - Technology/business analysis
-       - Foundation 
-       - Provisioning/deployment
-       - Continuous delivery
-       - Reimagining the business
-    5. Volker is the only solution that provides and automates industry standard
-    best practices for cloud deployment 
-
-    6. Volker includes a security framework and best practices to ensure a
-    compliant cloud foundation
-
-    7. Volker provides a ready-made cloud foundation framework for rapid
-    adoption of any public cloud platform
-
-    8. Volker is the only end to end cloud automation solution built on open
-    standards
-
-    9. Volker provides the only solution that fully secures client
-    infrastructure before and after it’s provisioned
-
-    10. Volker is the only enterprise-grade end to end automation tool deployed
-    in F500 companies
-
-    11. Volker is the only tool with a customizable scoring model that
-    prioritizes application migration based on business value 
-
-    12. Volker is the only cloud automation tool that is truly federated to
-    allow teams to migrate at their own pace
-
-    13. Volker is the only solution that provides a single source of truth
-    across an entire enterprise cloud migration 
-
-    14. Volker is the only cloud automation solution actually built by cloud
-    architects for cloud architects.
-
-
-
+  heading: 60% of all cloud initiatives fail. None of ours have.
+  description: |
+    _What makes Volker different than other tools?_
+    1. Volker is the only enterprise end-to-end multi-cloud automation solution  
+    1. Volker is the most effective tool in automating repetitive and manual dev ops activities 
+    1. Volker is the only tool that automates all three vital aspects of an enterprise migration
+        - Planning, Provisioning, and Compliance
+    1. Volker is the only tool that automates all six stages of the journey to cloud 
+        - Business evaluation
+        - Technology/business analysis
+        - Foundation 
+        - Provisioning/deployment
+        - Continuous delivery
+        - Reimagining the business
+    1. Volker is the only solution that provides and automates industry standard best practices for cloud deployments 
+    1. Volker includes a security framework and best practices to ensure a compliant cloud foundation
+    1. Volker provides a ready-made cloud foundation framework for rapid adoption of any public cloud platform
+    1. Volker is the only end to end cloud automation solution built on open standards
+    1. Volker provides the only solution that fully secures client infrastructure before and after it’s provisioned
+    1. Volker is the only enterprise-grade end to end automation tool deployed in F500 companies
+    1. Volker is the only tool with a customizable scoring model that prioritizes application migration based on business value 
+    1. Volker is the only cloud automation tool that is truly federated to allow teams to migrate at their own pace
+    1. Volker is the only solution that provides a single source of truth across an entire enterprise cloud migration 
+    1. Volker is the only cloud automation solution actually built by cloud architects for cloud architects.
 main:
   heading: Cloud DevOps for the Enterprise
   description: >+
     We are enabling large enterprise organizations to change their way of
     delivering technology that is modern, fast, and significantly less costly to
     maintain.
-
-
   image1:
     alt: Compliance Frameworks
     image: /img/frameworks.jpg

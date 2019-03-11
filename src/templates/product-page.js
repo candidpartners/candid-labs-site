@@ -1,4 +1,5 @@
 import React from 'react'
+import showdown from 'showdown'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
@@ -6,6 +7,17 @@ import Features from '../components/Features'
 import Testimonials from '../components/Testimonials'
 import Pricing from '../components/Pricing'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+
+const converter = new showdown.Converter();
+
+const MarkdownContent = ({ content, className }) => (
+  <div className={className} dangerouslySetInnerHTML={{ __html: converter.makeHtml(content) }} />
+);
+
+MarkdownContent.propTypes = {
+  content: PropTypes.string,
+  className: PropTypes.string,
+};
 
 export const ProductPageTemplate = ({
   image,
@@ -47,11 +59,19 @@ export const ProductPageTemplate = ({
                 </h2>
               </div>
               <div className="columns">
-                <div className="column is-7">
+                <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
                     {heading}
                   </h3>
                   <p>{description}</p>
+                </div>
+              </div>
+              <div className="columns">
+                <div className="column is-12">
+                  <h3 className="has-text-weight-semibold is-size-3">
+                    {intro.heading}
+                  </h3>
+                  <MarkdownContent content={intro.description} />
                 </div>
               </div>
               <Features gridItems={intro.blurbs} />
@@ -84,6 +104,8 @@ ProductPageTemplate.propTypes = {
   description: PropTypes.string,
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
+    heading: PropTypes.string,
+    description: PropTypes.string
   }),
   main: PropTypes.shape({
     heading: PropTypes.string,
