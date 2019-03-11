@@ -1,8 +1,7 @@
 ---
 templateKey: index-page
 title: Volker
-image: >-
-  https://raw.githubusercontent.com/candidpartners/candid-labs-site/master/static/img/fast.jpg
+image: img/fast.jpg
 heading: Migrate to the Cloud. Fast.
 subheading: Cloud Automation Platform
 mainpitch:
