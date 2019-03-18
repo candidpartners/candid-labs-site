@@ -31,30 +31,33 @@ export const IndexPageTemplate = ({
     >
   <div style={{
         display: 'flex',
-        height: '150px',
+        height: '250px',
         lineHeight: '1',
-        justifyContent: 'space-around',
-        alignItems: 'left',
+        marginTop: '4.5em',
+        marginLeft: '10rem',
+        width: '100%',
+        justifyContent: 'center',
+        alignItems: 'end',
         flexDirection: 'column' }}>
       <h1
-        className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+        className="has-text-weight-bold"
         style={{
-          boxShadow: 'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-          backgroundColor: 'rgb(255, 68, 0)',
-          color: 'white',
-          lineHeight: '1',
-          padding: '0.25em'
+          fontSize: '12em',
+          opacity: '0.9',
+          color: 'rgb(255, 255, 255)',
+          textShadow: '1px 1px .5px black'
         }}
       >
         {title}
       </h1>
-      <h3 className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+      <h3 className="has-text-weight-bold"
           style={{
-            boxShadow: 'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
+            fontSize: '4em',
             lineHeight: '1',
-            padding: '0.25em'
+            marginTop: '.5em',
+            opacity: '0.9',
+            color: 'rgb(255, 255, 255)',
+            textShadow: '2px 2px .5px black'
           }}
       >
         {subheading}

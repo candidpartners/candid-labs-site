@@ -17,17 +17,24 @@ export default class BlogIndexPage extends React.Component {
                   backgroundImage: `url('/img/blog-index.jpg')`,
                 }}
               >
+              <div
+                style={{
+                  width: '100%',
+                  textAlign: 'right',
+                  paddingRight: '8em',
+                }}
+              >
                 <h1
-                  className="has-text-weight-bold is-size-1"
-                  style={{
-                    boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-                    backgroundColor: '#f40',
-                    color: 'white',
-                    padding: '1rem',
-                  }}
-                >
-                  Latest Stories
-                </h1>
+                    className="has-text-weight-bold"
+                    style={{
+                      color: 'white',
+                      padding: '1rem',
+                      fontSize: '5em',
+                    }}
+                  >
+                    Latest Stories
+                  </h1>
+              </div>
               </div>
             </div>
               <BlogRoll />

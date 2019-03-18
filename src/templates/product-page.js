@@ -47,18 +47,17 @@ export const ProductPageTemplate = ({
                 }}
               >
                 <h2
-                  className="has-text-weight-bold is-size-1"
+                  className="has-text-weight-bold"
                   style={{
-                    boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-                    backgroundColor: '#f40',
-                    color: 'white',
-                    padding: '1rem',
+                    fontSize: '10em',
+                    opacity: '0.7',
+                    color: 'rgb(255, 255, 255)',
                   }}
                 >
                   {title}
                 </h2>
               </div>
-              <div className="columns">
+              <div className="columns" style={{ marginTop: '5em'}}>
                 <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
                     {heading}
