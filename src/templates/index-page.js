@@ -26,38 +26,35 @@ export const IndexPageTemplate = ({
                 : image
             })`,
             backgroundPosition: `top left`,
-            backgroundAttachment: `fixed`,
+            height: '100vh'
           }}
     >
   <div style={{
         display: 'flex',
         height: '250px',
         lineHeight: '1',
-        marginTop: '4.5em',
-        marginLeft: '10rem',
         width: '100%',
-        justifyContent: 'center',
-        alignItems: 'end',
+        height: '100vh',
+        paddingBottom: '15em',
+        justifyContent: 'flex-end',
+        alignItems: 'center',
         flexDirection: 'column' }}>
       <h1
         className="has-text-weight-bold"
         style={{
-          fontSize: '12em',
+          fontSize: '10em',
           opacity: '0.9',
           color: 'rgb(255, 255, 255)',
-          textShadow: '1px 1px .5px black'
         }}
       >
         {title}
       </h1>
       <h3 className="has-text-weight-bold"
           style={{
-            fontSize: '4em',
+            fontSize: '3em',
             lineHeight: '1',
             marginTop: '.5em',
-            opacity: '0.9',
             color: 'rgb(255, 255, 255)',
-            textShadow: '2px 2px .5px black'
           }}
       >
         {subheading}
