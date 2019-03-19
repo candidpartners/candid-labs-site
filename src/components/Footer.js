@@ -10,7 +10,7 @@ import vimeo from '../img/social/vimeo.svg'
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer className="footer has-text-white-ter" style={{ backgroundColor: "#595959"}}>
+      <footer className="footer has-text-white-ter" style={{ backgroundColor: "#f2f2f2" }}>
         <div className="content has-text-centered">
           <img
             src={logo}
@@ -55,7 +55,7 @@ const Footer = class extends React.Component {
                     <img 
                       src={facebook}
                       alt="Facebook"
-                      style={{ width: '1em', height: '1em' }}
+                      style={{ width: '1em', height: '1em'}}
                     />
                   </a>
                   <a title="twitter" href="https://twitter.com">

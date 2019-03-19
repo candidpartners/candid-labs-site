@@ -29,34 +29,11 @@ export const IndexPageTemplate = ({
             height: '100vh'
           }}
     >
-  <div style={{
-        display: 'flex',
-        height: '250px',
-        lineHeight: '1',
-        width: '100%',
-        height: '100vh',
-        paddingBottom: '15em',
-        justifyContent: 'flex-end',
-        alignItems: 'center',
-        flexDirection: 'column' }}>
-      <h1
-        className="has-text-weight-bold"
-        style={{
-          fontSize: '10em',
-          opacity: '0.9',
-          color: 'rgb(255, 255, 255)',
-        }}
-      >
+  <div className='index-page-banner'>
+      <h1 className="has-text-weight-bold index-head" >
         {title}
       </h1>
-      <h3 className="has-text-weight-bold"
-          style={{
-            fontSize: '3em',
-            lineHeight: '1',
-            marginTop: '.5em',
-            color: 'rgb(255, 255, 255)',
-          }}
-      >
+      <h3 className="has-text-weight-bold index-subhead">
         {subheading}
       </h3>
       </div>
@@ -68,39 +45,25 @@ export const IndexPageTemplate = ({
           <div className="column is-10 is-offset-1">
             <div className="content">
               <div className="content">
-                <div className="tile">
-                  <h1 className="title">{mainpitch.title}</h1>
-                </div>
-                <div className="tile">
-                  <h3 className="subtitle">{mainpitch.description}</h3>
+                <div style={{ marginBottom: '10em'}}>
+                  <h1 className="title" style={{ fontSize: '8em' }}>{mainpitch.title}</h1>
+                  <h2 className="subtitle" style={{ marginTop: '3em', marginLeft: '3em' }}>{mainpitch.description}</h2>
                 </div>
               </div>
-              <div className="columns">
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    {heading}
-                  </h3>
-                  <p>{description}</p>
+              <div className="content">
+                <div  style={{ marginBottom: '11em'}}>
+                  <h1 className="title" style={{ fontSize: '5em', textAlign: 'right'}}>{heading}</h1>
+                  <h3 className="subtitle" style={{ marginTop: '4em',marginLeft: '3em', textAlign: 'left' }}>{description}</h3>
                 </div>
               </div>
               <Features gridItems={intro.blurbs} />
               <div className="columns">
-              <div className="column is-12 has-text-centered">
-                <Link className="btn" to="/products">
-                  See all products
+              <div className="column is-12 has-text-centered" style={{marginTop: '5em'}}>
+                <h3 style={{ display: 'inline-block', marginTop: '.5em', verticalAlign: 'middle'}}>See all products</h3>
+                <Link to="/products">
+                  <i class="fas fa-chevron-right"></i>
                 </Link>
                 </div>
-              </div>
-              <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
-                  </h3>
-                  <BlogRoll />
-                  <div className="column is-12 has-text-centered">
-                  <Link className="btn" to="/blog">
-                    Read more
-                  </Link>
-                  </div>
               </div>
               </div>
           </div>

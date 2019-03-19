@@ -3,31 +3,28 @@ import PropTypes from 'prop-types'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 const FeatureGrid = ({ gridItems }) => (
-  <div style={{
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "center",
-    alignItems: "start",
-    flexWrap: "wrap"
-  }}>
-    {gridItems.map(item => (
-      <div key={item.text} 
-           style={{ 
-             flex: "1 1 300px",
-             maxWidth: "500px",
-             display: "inline-block"
-             }}
-      >
-        <section className="section">
-          <div className="has-text-centered">
-            <div>
-              <PreviewCompatibleImage imageInfo={item} />
-            </div>
+  <div>
+    {gridItems.map((item, index) => {
+      if(index%2){
+        return (
+          <div key={item.text} style={{ marginBottom: '5em'}}>
+              <PreviewCompatibleImage imageInfo={item.image} side='left' style={{  margin: "5em" }}/>
+              <p style={{ margin: "5em", display: "inline-block", maxWidth: '400px'}}>{item.text}</p>
           </div>
-          <p style={{ margin: "1.5em"}}>{item.text}</p>
-        </section>
-      </div>
-    ))}
+        ) 
+      }
+      else {
+        return (
+          <div key={item.text} style={{ marginBottom: '5em'}}>
+            <p style={{  margin: "5em", display: "inline-block", maxWidth: '400px'}}>{item.text}</p>
+            <PreviewCompatibleImage style={{ margin: "5em" }} side='right' imageInfo={item.image} />
+          </div>
+        ) 
+      }
+        
+    }
+
+    )}
   </div>
 )
 

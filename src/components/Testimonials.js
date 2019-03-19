@@ -3,16 +3,31 @@ import PropTypes from 'prop-types'
 import { v4 } from 'uuid'
 
 const Testimonials = ({ testimonials }) => (
-  <div>
-    {testimonials.map(testimonial => (
-      <article key={v4()} className="message">
-        <div className="message-body">
-          {testimonial.quote}
-          <br />
-          <cite> – {testimonial.author}</cite>
-        </div>
-      </article>
-    ))}
+  <div style={{ overflow: 'hidden'}}>
+    {testimonials.map((testimonial, index) => {
+      if(index%2){
+        return (
+          <section key={v4()} className="testimonial" style={{ float: 'right'}}>
+            <div>
+              {testimonial.quote}
+              <br />
+              <cite> – {testimonial.author}</cite>
+            </div>
+          </section>
+        )
+      }
+      else {
+        return (
+          <section key={v4()} className="testimonial" style={{ float: 'left'}}>
+            <div>
+              {testimonial.quote}
+              <br />
+              <cite> – {testimonial.author}</cite>
+            </div>
+          </section>
+        )
+      }
+    } )}
   </div>
 )
 

@@ -2,8 +2,29 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Img from 'gatsby-image'
 
-const PreviewCompatibleImage = ({ imageInfo }) => {
-  const imageStyle = { borderRadius: '5px' }
+const PreviewCompatibleImage = ({ imageInfo, side }) => {
+  let imageStyle
+  if(side === 'left'){
+    imageStyle = { 
+      transform: 'perspective(30em) rotateY(30deg)',
+      borderRadius: '5px',
+      maxWidth: '300px',
+      width: '300px',
+      display:'inline-block',
+      boxShadow: '2em 2em 2em gray'
+    }
+  }
+  if(side === 'right'){
+    imageStyle = { 
+      transform: 'perspective(30em) rotateY(-30deg)',
+      borderRadius: '5px',
+      maxWidth: '300px',
+      width: '300px',
+      display:'inline-block',
+      boxShadow: '2em 2em 2em gray'
+    }
+  }
+  
   const { alt = '', childImageSharp, image } = imageInfo
 
   if (!!image && !!image.childImageSharp) {

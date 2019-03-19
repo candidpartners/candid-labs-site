@@ -5,7 +5,7 @@ image: /img/automate.jpg
 heading: Migrate to the Cloud. Fast.
 subheading: Cloud Automation Platform
 mainpitch:
-  title: Why Volker
+  title: Why Volker?
   description: >
     Candid Labs provides cloud automation software that helps organizations plan
     their journey to the cloud, provision cloud based infrastructure resources

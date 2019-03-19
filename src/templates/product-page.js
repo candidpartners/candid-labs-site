@@ -22,6 +22,7 @@ MarkdownContent.propTypes = {
 export const ProductPageTemplate = ({
   image,
   title,
+  subheading,
   heading,
   description,
   intro,
@@ -30,33 +31,46 @@ export const ProductPageTemplate = ({
   fullImage,
   pricing,
 }) => (
-  <section className="section section--gradient">
-    <div className="container">
-      <div className="section">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="content">
-              <div
-                className="full-width-image-container margin-top-0"
-                style={{
-                  backgroundImage: `url(${
-                    !!image.childImageSharp
-                      ? image.childImageSharp.fluid.src
-                      : image
-                  })`,
-                }}
-              >
-                <h2
-                  className="has-text-weight-bold"
-                  style={{
-                    fontSize: '10em',
-                    opacity: '0.7',
-                    color: 'rgb(255, 255, 255)',
-                  }}
-                >
-                  {title}
-                </h2>
-              </div>
+<section className="section section--gradient">
+  <div
+    className="full-width-image-container margin-top-0"
+    style={{
+      backgroundImage: `url(${
+        !!image.childImageSharp
+          ? image.childImageSharp.fluid.src
+          : image
+      })`,
+      backgroundPosition: `top left`,
+      height: '95vh'
+    }}
+  >
+  <div style={{ margin: '0 3em'}}>
+    <h2
+      className="has-text-weight-bold"
+      style={{
+        fontSize: '4em',
+        opacity: '0.7',
+        color: 'rgb(255, 255, 255)',
+      }}
+    >
+      {title}
+    </h2>
+    <h3 className="has-text-weight-bold"
+          style={{
+            fontSize: '2em',
+            marginTop: '.5em',
+            color: 'rgb(255, 255, 255)',
+          }}
+      >
+        {subheading}
+    </h3>
+  </div>
+  </div>
+  <div className="container">
+    <div className="section">
+      <div className="columns">
+        <div className="column is-10 is-offset-1">
+          <div className="content">
               <div className="columns" style={{ marginTop: '5em'}}>
                 <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
@@ -75,7 +89,7 @@ export const ProductPageTemplate = ({
               </div>
               <Features gridItems={intro.blurbs} />
               <div className="columns">
-                <div className="column is-7">
+                <div>
                   <h3 className="has-text-weight-semibold is-size-3">
                     {main.heading}
                   </h3>
@@ -83,7 +97,7 @@ export const ProductPageTemplate = ({
                 </div>
               </div>
               <Testimonials testimonials={testimonials} />
-              <h2 className="has-text-weight-semibold is-size-2">
+              <h2 className="has-text-weight-semibold is-size-2 has-text-centered">
                 {pricing.heading}
               </h2>
               <p className="is-size-5">{pricing.description}</p>
@@ -99,6 +113,7 @@ export const ProductPageTemplate = ({
 ProductPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
+  subheading: PropTypes.string,
   heading: PropTypes.string,
   description: PropTypes.string,
   intro: PropTypes.shape({
@@ -127,6 +142,7 @@ const ProductPage = ({ data }) => {
       <ProductPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
+        subheading={frontmatter.subheading}
         heading={frontmatter.heading}
         description={frontmatter.description}
         intro={frontmatter.intro}
@@ -154,6 +170,7 @@ export const productPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
+        subheading
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
