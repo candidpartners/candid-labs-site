@@ -17,25 +17,25 @@ export const IndexPageTemplate = ({
   main,
 }) => (
     <div>
-        <div
-          className="full-width-image margin-top-0"
-          style={{
-            backgroundImage: `url(${
-              !!image.childImageSharp
-                ? image.childImageSharp.fluid.src
-                : image
-            })`,
-            backgroundPosition: `top left`,
-            height: '100vh'
-          }}
-    >
-  <div className='index-page-banner'>
-      <h1 className="has-text-weight-bold index-head" >
-        {title}
-      </h1>
-      <h3 className="has-text-weight-bold index-subhead">
-        {subheading}
-      </h3>
+      <div
+        className="full-width-image margin-top-0"
+        style={{
+          backgroundImage: `url(${
+            !!image.childImageSharp
+              ? image.childImageSharp.fluid.src
+              : image
+          })`,
+          backgroundPosition: `top left`,
+          height: '100vh'
+        }}
+      >
+      <div className='index-page-banner'>
+        <h1 className="has-text-weight-bold index-head" >
+          {title}
+        </h1>
+        <h3 className="has-text-weight-bold index-subhead">
+          {subheading}
+        </h3>
       </div>
     </div>
   <section className="section section--gradient">
