@@ -28,6 +28,11 @@ const TemplateWrapper = ({ children }) => (
             name="description"
             content={data.site.siteMetadata.description}
           />
+          <meta property="og:type" content="business.business" />
+          <meta property="og:title" content="Candid Labs" />
+          <meta property="og:url" content="/" />
+          <meta property="og:image" content="/img/volker-screen.png" />
+          
           <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet"/>\
           <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
           <link
@@ -55,10 +60,6 @@ const TemplateWrapper = ({ children }) => (
           />
           <meta name="theme-color" content="#fff" />
 
-          <meta property="og:type" content="business.business" />
-          <meta property="og:title" content="Candid Labs" />
-          <meta property="og:url" content="/" />
-          <meta property="og:image" content="/img/volker-screen.png" />
         </Helmet>
         <Navbar />
         <div>{children}</div>

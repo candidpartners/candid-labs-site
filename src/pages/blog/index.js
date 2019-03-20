@@ -2,6 +2,7 @@ import React from 'react'
 
 import Layout from '../../components/Layout'
 import BlogRoll from '../../components/BlogRoll'
+import BlogLatest from '../../components/BlogLatest'
 
 export default class BlogIndexPage extends React.Component {
   render() {
@@ -14,31 +15,47 @@ export default class BlogIndexPage extends React.Component {
             <div
                 className="full-width-image-container margin-top-0"
                 style={{
-                  backgroundImage: `url('/img/blog-index.jpg')`,
-                  height: '100vh'
+                  backgroundImage: `url('/img/blogs.jpg')`,
+                  height: '130vh'
                 }}
               >
               <div
                 style={{
                   width: '100%',
-                  textAlign: 'right',
-                  paddingRight: '8em',
+                  height: '100vh',
+                  textAlign: 'left',
+                  paddingLeft: '8em',
                 }}
               >
                 <h1
                     className="has-text-weight-bold"
                     style={{
-                      color: 'white',
+                      color: '#333333',
                       padding: '1rem',
                       fontSize: '5em',
                     }}
                   >
-                    Latest Stories
-                  </h1>
+                  <span
+                    style={{
+                      color: 'white',
+                      fontSize: '3rem',
+                    }}>
+                    read the latest from
+                  </span>
+                  <br />
+                  Candid Labs
+                </h1>
+                <div
+                  style={{
+                    width: '50%', backgroundColor: 'rgba(0, 0, 0, 0.1)', padding: '3em'
+                  }}
+                >
+                  <BlogLatest />
+                </div> 
               </div>
               </div>
-            </div>
               <BlogRoll />
+            </div>
             </div>
         </section>
       </Layout>
