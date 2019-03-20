@@ -2,6 +2,7 @@
 templateKey: blog-post
 title: A beginners guide to Infrastructure as Code
 date: 2017-01-04T15:04:10.000Z
+image: '/img/automate.jpg'
 description: >-
   Infrastructure as code (IaC) is the process of managing and provisioning
   computing resources through machine-readable definition files, rather than

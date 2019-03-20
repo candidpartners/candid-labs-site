@@ -13,23 +13,41 @@ class BlogRoll extends React.Component {
       {posts && (posts
           .map(({ node: post }) => (
             <div
-              className="is-parent column is-6"
+              className="is-parent column is-4"
               key={post.id}
             >
-            <article className="tile is-child box notification">
+            <article>
+              <Link to={post.fields.slug}>
+                <div
+                  className="full-width-image-container margin-top-0 blog-img"
+                  style={{
+                    backgroundImage: `url(${
+                      !!post.frontmatter.image.childImageSharp
+                        ? post.frontmatter.image.childImageSharp.fluid.src
+                        : post.frontmatter.image
+                    })`,
+                    backgroundColor: 'rgba(0, 0, 0, .5)',
+                    width: '100%',
+                    position: 'static',
+                    margin: '0 0 2em 0',
+                    height: '20vh',
+
+                  }}
+                />
+              </Link>
               <p>
-                <Link className="title has-text-primary is-size-4" to={post.fields.slug}>
+                <span className="title has-text-primary is-size-4">
                   {post.frontmatter.title}
-                </Link>
+                </span>
                 <span> &bull; </span>
-                <span className="subtitle is-size-5 is-block">{post.frontmatter.date}</span>
+                <br />
+                <br />  
+                <span className="subtitle is-size-6 is-block" style={{ opacity: '0.5'}}>{post.frontmatter.date}</span>
               </p>
+              <br />
               <p>
-                {post.excerpt}
-                <br />
-                <br />
-                <Link className="button" to={post.fields.slug}>
-                  Keep Reading →
+                <Link className="btn" to={post.fields.slug}>
+                  Blog Post →
                 </Link>
               </p>
               </article>
@@ -67,6 +85,13 @@ export default () => (
               title
               templateKey
               date(formatString: "MMMM DD, YYYY")
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 2048, quality: 100) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
             }
           }
         }

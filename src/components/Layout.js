@@ -28,7 +28,8 @@ const TemplateWrapper = ({ children }) => (
             name="description"
             content={data.site.siteMetadata.description}
           />
-
+          <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet"/>\
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
           <link
             rel="apple-touch-icon"
             sizes="180x180"
@@ -57,7 +58,7 @@ const TemplateWrapper = ({ children }) => (
           <meta property="og:type" content="business.business" />
           <meta property="og:title" content={data.site.siteMetadata.title} />
           <meta property="og:url" content="/" />
-          <meta property="og:image" content="/img/og-image.jpg" />
+          <meta property="og:image" content="/img/volker-screen.png" />
         </Helmet>
         <Navbar />
         <div>{children}</div>

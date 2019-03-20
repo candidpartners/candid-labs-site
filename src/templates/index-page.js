@@ -18,6 +18,7 @@ export const IndexPageTemplate = ({
 }) => (
     <div>
       <div
+        id="wave"
         className="full-width-image margin-top-0"
         style={{
           backgroundImage: `url(${
@@ -30,7 +31,7 @@ export const IndexPageTemplate = ({
         }}
       >
       <div className='index-page-banner'>
-        <h1 className="has-text-weight-bold index-head" >
+        <h1 className="has-text-weight-bold index-head">
           {title}
         </h1>
         <h3 className="has-text-weight-bold index-subhead">
@@ -52,8 +53,8 @@ export const IndexPageTemplate = ({
               </div>
               <div className="content">
                 <div  style={{ marginBottom: '11em'}}>
-                  <h1 className="title" style={{ fontSize: '5em', textAlign: 'right'}}>{heading}</h1>
-                  <h3 className="subtitle" style={{ marginTop: '4em',marginLeft: '3em', textAlign: 'left' }}>{description}</h3>
+                  <h1 className="title" style={{ fontSize: '5em' }}>{heading}</h1>
+                  <h3 className="subtitle" style={{ marginTop: '4em', marginLeft: '3em' }}>{description}</h3>
                 </div>
               </div>
               <Features gridItems={intro.blurbs} />

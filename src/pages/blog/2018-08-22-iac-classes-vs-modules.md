@@ -2,6 +2,7 @@
 templateKey: blog-post
 title: 'Infrastructure as Code: Classes vs Modules'
 date: 2018-08-22T12:00:10.000Z
+image: '/img/rockets.jpg'
 description: >-
   A new form of Infrastructure as Code building Blocks is starting to be used
   within Enterprise CI/CD development
