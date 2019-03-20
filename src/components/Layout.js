@@ -56,7 +56,7 @@ const TemplateWrapper = ({ children }) => (
           <meta name="theme-color" content="#fff" />
 
           <meta property="og:type" content="business.business" />
-          <meta property="og:title" content={data.site.siteMetadata.title} />
+          <meta property="og:title" content="Candid Labs" />
           <meta property="og:url" content="/" />
           <meta property="og:image" content="/img/volker-screen.png" />
         </Helmet>
