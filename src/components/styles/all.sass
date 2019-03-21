@@ -1,0 +1,90 @@
+@import "~bulma/sass/utilities/initial-variables"
+
+
+// Config vars
+$white: #fff
+
+$primary: #4056A1
+$primary-invert: $white
+$body-color: #333
+$black: #2b2523
+
+@import "landing"
+@import "heading"
+@import "products"
+@import "blog"
+@import "contact"
+@import "footer"
+@import "features"
+
+body 
+  font-family: 'Roboto', sans-serif !important
+
+//helpers
+.full-width-image-container
+  width: 100vw
+  height: 400px
+  position: relative
+  left: 50%
+  right: 50%
+  margin: 2em -50vw
+  background-size: cover
+  background-position: bottom
+  display: flex
+  justify-content: center
+  align-items: center
+
+.full-width-image
+    width: 100vw
+    height: 400px
+    background-size: cover
+    background-position: bottom
+    display: flex
+    justify-content: center
+    align-items: center
+
+.btn
+    display: inline-block
+    padding: 12px 16px 10px
+    font-size: 18px
+    font-size: 1rem
+    line-height: 1.25
+    background-color: rgba(0, 0, 0, 0)
+    border-radius: .25rem
+    text-decoration: none
+    font-weight: 700
+    color: $primary
+    text-align: center
+    border: 1px solid $primary
+    -webkit-transition: all .15s ease
+    transition: all .15s ease
+
+.btn:hover 
+  color: white
+  background: $primary
+  border: 1px solid rgba(0, 0, 0, 0)
+
+.margin-top-0
+  margin-top: 0 !important
+
+.navbar-item:hover
+  color: $primary !important
+  cursor: pointer
+.navbar.is-transparent
+  background: #f2f2f2
+  position: fixed
+  width: 100%
+
+.navbar-item .icon 
+  color: $primary
+// Override for use of svg's from https://simpleicons.org/
+.icon svg 
+  width: 1.5rem
+  height: 1.5rem
+  fill: currentColor
+.navbar-brand .navbar-item.logo
+  padding: 0 1rem
+
+
+
+@import "~bulma"

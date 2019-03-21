@@ -24,12 +24,7 @@ export const IndexPageTemplate = ({
             !!image.childImageSharp
               ? image.childImageSharp.fluid.src
               : image
-          })`,
-          width: '100%',
-          backgroundPosition: `top left`,
-          height: '100vh',
-          backgroundColor: 'rgba(0, 0, 0, .5)',
-          position: 'static'
+          })`
         }}
       >
       <div className='index-page-banner'>
@@ -48,21 +43,21 @@ export const IndexPageTemplate = ({
           <div className="column is-10 is-offset-1">
             <div className="content">
               <div className="content">
-                <div style={{ marginBottom: '10em'}}>
-                  <h1 className="title" style={{ fontSize: '8em' }}>{mainpitch.title}</h1>
-                  <h2 className="subtitle" style={{ marginTop: '3em', marginLeft: '3em', lineHeight: '2' }}>{mainpitch.description}</h2>
+                <div className="index-mainpitch">
+                  <h1 className="title mainpitch">{mainpitch.title}</h1>
+                  <h2 className="subtitle" id="desc-mainpitch-index">{mainpitch.description}</h2>
                 </div>
               </div>
               <div className="content">
-                <div  style={{ marginBottom: '11em'}}>
-                  <h1 className="title" style={{ fontSize: '5em' }}>{heading}</h1>
-                  <h3 className="subtitle" style={{ marginTop: '4em', marginLeft: '3em', lineHeight: '2' }}>{description}</h3>
+                <div className="index-info">
+                  <h1 className="title">{heading}</h1>
+                  <h3 id="desc-info-index">{description}</h3>
                 </div>
               </div>
               <Features gridItems={intro.blurbs} />
               <div className="columns">
-              <div className="column is-12 has-text-centered" style={{marginTop: '5em'}}>
-                <h3 style={{ display: 'inline-block', marginTop: '.5em', verticalAlign: 'middle'}}>See all products</h3>
+              <div className="column is-12 has-text-centered products-link-div">
+                <h3>See all products</h3>
                 <Link to="/products">
                   <i class="fas fa-chevron-right"></i>
                 </Link>

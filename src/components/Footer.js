@@ -10,17 +10,17 @@ import vimeo from '../img/social/vimeo.svg'
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer className="footer has-text-white-ter" style={{ backgroundColor: "#f2f2f2" }}>
+      <footer className="footer has-text-white-ter footer-container">
         <div className="content has-text-centered">
           <img
             src={logo}
-            alt="Kaldi"
+            alt="candid labs"
             style={{ width: '14em' }}
           />
         </div>
         <div className="content has-text-centered has-text-white-ter">
           <div className="container has-text-white-ter">
-              <div className="columns" style={{ paddingBottom: "3em" }}>
+              <div className="columns footer-columns">
                 <div className="column is-4">
                 <section className="menu">
                     <ul className="menu-list">
@@ -55,31 +55,30 @@ const Footer = class extends React.Component {
                     <img 
                       src={facebook}
                       alt="Facebook"
-                      style={{ width: '1em', height: '1em'}}
+                      className="social-btn"
                     />
                   </a>
                   <a title="twitter" href="https://twitter.com">
-                  <img
-                    className="fas fa-lg"
-                    src={twitter}
-                    alt="Twitter"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="instagram" href="https://instagram.com">
-                  <img
-                  src={instagram}
-                  alt="Instagram"
-                  style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="vimeo" href="https://vimeo.com">
-                  <img
-                  src={vimeo}
-                  alt="Vimeo"
-                  style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
+                    <img
+                      className="fas fa-lg social-btn"
+                      src={twitter}
+                      alt="Twitter"
+                    />
+                  </a>
+                  <a title="instagram" href="https://instagram.com">
+                    <img
+                    src={instagram}
+                    alt="Instagram"
+                    className="social-btn"
+                    />
+                  </a>
+                  <a title="vimeo" href="https://vimeo.com">
+                    <img
+                    src={vimeo}
+                    alt="Vimeo"
+                    className="social-btn"
+                    />
+                  </a>
                 </div>
               </div>
             </div>

@@ -26,12 +26,6 @@ class BlogRoll extends React.Component {
                         ? post.frontmatter.image.childImageSharp.fluid.src
                         : post.frontmatter.image
                     })`,
-                    backgroundColor: 'rgba(0, 0, 0, .5)',
-                    width: '100%',
-                    position: 'static',
-                    margin: '0 0 2em 0',
-                    height: '20vh',
-
                   }}
                 />
               </Link>
@@ -42,7 +36,7 @@ class BlogRoll extends React.Component {
                 <span> &bull; </span>
                 <br />
                 <br />  
-                <span className="subtitle is-size-6 is-block" style={{ opacity: '0.5'}}>{post.frontmatter.date}</span>
+                <span className="subtitle is-size-6 is-block blog-roll">{post.frontmatter.date}</span>
               </p>
               <br />
               <p>

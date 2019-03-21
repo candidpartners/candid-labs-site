@@ -39,29 +39,14 @@ export const ProductPageTemplate = ({
         !!image.childImageSharp
           ? image.childImageSharp.fluid.src
           : image
-      })`,
-      backgroundPosition: `top left`,
-      height: '95vh'
+      })`
     }}
   >
-  <div style={{ margin: '0 3em', zIndex: '3'}}>
-    <h2
-      className="has-text-weight-bold"
-      style={{
-        fontSize: '4em',
-        opacity: '0.8',
-        color: 'rgb(255, 255, 255)'
-      }}
-    >
+  <div className="product-banner-header">
+    <h2 className="has-text-weight-bold products-head">
       {title}
     </h2>
-    <h3 className="has-text-weight-bold"
-          style={{
-            fontSize: '2em',
-            marginTop: '.5em',
-            color: 'rgb(255, 255, 255)'
-          }}
-      >
+    <h3 className="has-text-weight-bold products-subhead">
         {subheading}
     </h3>
   </div>

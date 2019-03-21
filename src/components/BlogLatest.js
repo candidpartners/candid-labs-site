@@ -10,22 +10,20 @@ class BlogLatest extends React.Component {
     const post = posts && posts[0].node
     console.log(post)
     return (
-      <div className="columns is-multiline">
-        <div
-            key={post.id}
-        >
+      <div className="columns is-multiline blog-latest">
+        <div key={post.id}>
           <article>
             <p>
-              <Link to={post.fields.slug} className="title is-size-3"  style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
+              <Link to={post.fields.slug} className="title is-size-3 blog-latest">
                 {post.frontmatter.title}
               </Link>
               <br />
               <br />  
-              <span className="subtitle is-size-6 is-block" style={{ fontWeight: '600', color: 'black', lineHeight: '2'}}>{post.excerpt}</span>
+              <span className="subtitle is-size-6 is-block blog-latest">{post.excerpt}</span>
             </p>
             <br />
             <p>
-              <Link className="btn" to={post.fields.slug} style={{ borderWidth: '3px', fontWeight: '600'}}>
+              <Link className="btn blog-latest" to={post.fields.slug}>
                   Read More →
               </Link>
             </p>

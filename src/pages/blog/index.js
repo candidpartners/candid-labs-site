@@ -12,44 +12,19 @@ export default class BlogIndexPage extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content">
-            <div
-                className="full-width-image-container margin-top-0"
-                style={{
-                  backgroundImage: `url('/img/blogs-img.jpg')`,
-                  height: '130vh'
-                }}
-              >
               <div
-                style={{
-                  width: '100%',
-                  height: '100vh',
-                  textAlign: 'left',
-                  paddingLeft: '8em',
-                }}
+                className="full-width-image-container margin-top-0 blog-banner-img"
+                style={{ backgroundImage: `url('/img/blogs-img.jpg')` }}
               >
-                <h1
-                    className="has-text-weight-bold"
-                    style={{
-                      color: '#333333',
-                      padding: '1rem',
-                      fontSize: '5em',
-                    }}
-                  >
-                  <span
-                    style={{
-                      color: 'white',
-                      fontSize: '3rem',
-                    }}>
+              <div className="blog-banner-text">
+                <h1 className="has-text-weight-bold blog-banner-h1">
+                  <span>
                     read the latest from
                   </span>
                   <br />
                   Candid Labs
                 </h1>
-                <div
-                  style={{
-                    width: '50%', backgroundColor: 'rgba(0, 0, 0, 0.1)', padding: '3em'
-                  }}
-                >
+                <div className="latest-blog-container">
                   <BlogLatest />
                 </div> 
               </div>

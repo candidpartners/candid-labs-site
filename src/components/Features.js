@@ -7,17 +7,17 @@ const FeatureGrid = ({ gridItems }) => (
     {gridItems.map((item, index) => {
       if(index%2){
         return (
-          <div key={item.text} style={{ marginBottom: '5em'}}>
-              <PreviewCompatibleImage imageInfo={item.image} side='left' style={{  margin: "5em" }}/>
-              <p style={{ margin: "5em", display: "inline-block", maxWidth: '400px'}}>{item.text}</p>
+          <div key={item.text} className="features-container">
+              <PreviewCompatibleImage className="features-img" imageInfo={item.image} side='left'/>
+              <p className="features-text">{item.text}</p>
           </div>
         ) 
       }
       else {
         return (
-          <div key={item.text} style={{ marginBottom: '5em'}}>
-            <p style={{  margin: "5em", display: "inline-block", maxWidth: '400px'}}>{item.text}</p>
-            <PreviewCompatibleImage style={{ margin: "5em" }} side='right' imageInfo={item.image} />
+          <div key={item.text} className="features-container">
+            <p className="features-text">{item.text}</p>
+            <PreviewCompatibleImage className="features-img" side='right' imageInfo={item.image} />
           </div>
         ) 
       }

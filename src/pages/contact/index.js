@@ -36,39 +36,13 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout>
-            <div className="content">
-             <div
-                className="full-width-image-container contact-banner-img"
-                style={{
-                  backgroundImage: `url('/img/contact.jpg')`,
-                  height: '100vh',
-                  width: '50vw',
-                  margin: '0',
-                  left: '0',
-                  display: 'inline-block',
-                  textAlign: 'center'
-                }}
-              >
-                <h1 style={{
-                  zIndex: '3',
-                  axWidht: '50vw',
-                  position: 'absolute',
-                  color: 'rgba(255, 255, 255, 0.8',
-                  marginTop: '50%',
-                  marginLeft: '5vw'
-                }}>
-                  <span style={{ color: 'white', fontSize: '2em' }}> Send us a message </span><br /> we'd love to hear from you
+            <div className="content contact-banner">
+             <div className="full-width-image-container contact-banner-img" style={{ backgroundImage: `url('/img/contact.jpg')` }} >
+                <h1 className="contact-banner-header" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
+                  <span> Send us a message </span> <br /> we'd love to hear from you 
                 </h1>
               </div>
-              <div style={{
-                display: 'inline-block',
-                width: '50vw',
-                zIndex: '3',
-                marginTop: '5rem',
-                padding: '5em',
-                position: 'absolute'
-
-              }}>
+              <div className="contact-form">
                 <form
                   name="contact"
                   method="post"
@@ -130,7 +104,7 @@ export default class Index extends React.Component {
                     </div>
                   </div>
                   <div className="field">
-                    <button className="button is-link" type="submit">
+                    <button className="button is-link contact-button" type="submit">
                       Send
                     </button>
                   </div>
