@@ -31,7 +31,7 @@ export const ProductPageTemplate = ({
   fullImage,
   pricing,
 }) => (
-<section className="section section--gradient">
+<section className="section section--gradient" style={{ paddingTop: '0'}}>
   <div
     className="full-width-image-container margin-top-0 product-banner-img"
     style={{

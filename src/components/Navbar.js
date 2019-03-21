@@ -3,7 +3,25 @@ import { Link } from 'gatsby'
 import logo from '../img/CandidLabsLogo.png'
 
 const Navbar = class extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      position: 'navbar-top',
+      size: 'large'
+    }
+  }
+
+  listenScrollEvent = (e) => {
+    console.log(window.scrollY)
+    if (window.scrollY > 10) {
+      this.setState({ position: 'navbar-scroll', size: 'small' })
+    } else {
+      this.setState({ position: 'navbar-top', size: 'large' })
+    }
+  }
+
   componentDidMount() {
+    window.addEventListener('scroll', this.listenScrollEvent)
     // Get all "navbar-burger" elements
     const $navbarBurgers = Array.prototype.slice.call(
       document.querySelectorAll('.navbar-burger'),
@@ -30,13 +48,14 @@ const Navbar = class extends React.Component {
     return (
       <nav
         className="navbar is-transparent"
+        id={this.state.position}
         role="navigation"
         aria-label="main-navigation"   
       >
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
+              <img src={logo} alt="Kaldi" id={this.state.size} className="navbar-logo"/>
             </Link>
             {/* Hamburger menu */}
             <div className="navbar-burger burger" data-target="navMenu">

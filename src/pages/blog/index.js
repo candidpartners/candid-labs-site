@@ -9,7 +9,7 @@ export default class BlogIndexPage extends React.Component {
     
   return (
       <Layout>
-        <section className="section">
+        <section className="section" style={{ paddingTop : '0'}}>
           <div className="container">
             <div className="content">
               <div
