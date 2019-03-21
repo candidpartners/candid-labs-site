@@ -3,30 +3,19 @@ import PropTypes from 'prop-types'
 import { v4 } from 'uuid'
 
 const Testimonials = ({ testimonials }) => (
-  <div style={{ overflow: 'hidden'}}>
-    {testimonials.map((testimonial, index) => {
-      if(index%2){
-        return (
-          <section key={v4()} className="testimonial" style={{ float: 'right'}}>
-            <div>
-              {testimonial.quote}
-              <br />
-              <cite> – {testimonial.author}</cite>
-            </div>
-          </section>
-        )
-      }
-      else {
-        return (
-          <section key={v4()} className="testimonial" style={{ float: 'left'}}>
-            <div>
-              {testimonial.quote}
-              <br />
-              <cite> – {testimonial.author}</cite>
-            </div>
-          </section>
-        )
-      }
+  <div style={{ overflow: 'hidden', margin: '3em'}} className="columns">
+    {testimonials.map(( testimonial ) => {
+      return (
+        <section key={v4()} className="testimonial column is-6" style={{ margin: '2em' }} >
+          <div style={{ padding: '1em'  }}>  
+            {testimonial.quote}
+            <br />
+            <br />
+            <br />
+            <cite> – {testimonial.author}</cite>
+          </div>
+        </section>
+      )
     } )}
   </div>
 )
