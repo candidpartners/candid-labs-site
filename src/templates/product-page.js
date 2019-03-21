@@ -54,7 +54,7 @@ export const ProductPageTemplate = ({
   <div className="container">
     <div className="section">
       <div className="columns">
-        <div className="column is-10 is-offset-1">
+        <div className="column is-12">
           <div className="content">
               <div className="columns">
                 <div className="column is-12">
@@ -64,7 +64,9 @@ export const ProductPageTemplate = ({
                   <MarkdownContent content={intro.description} />
                 </div>
               </div>
-              <Features gridItems={intro.blurbs} />
+              <div style={{ margin: '10em auto'}}>
+                <Features gridItems={intro.blurbs} />
+              </div>
               <div className="columns">
                 <div>
                   <h3 className="has-text-weight-semibold is-size-3 has-text-centered">

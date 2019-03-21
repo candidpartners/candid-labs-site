@@ -6,20 +6,20 @@ const PreviewCompatibleImage = ({ imageInfo, side }) => {
   let imageStyle
   if(side === 'left'){
     imageStyle = { 
-      transform: 'perspective(30em) rotateY(30deg)',
+      transform: 'perspective(50em) rotateY(30deg)',
       borderRadius: '5px',
-      maxWidth: '300px',
-      width: '300px',
+      maxWidth: '500px',
+      width: '500px',
       display:'inline-block',
       boxShadow: '2em 2em 2em gray'
     }
   }
   if(side === 'right'){
     imageStyle = { 
-      transform: 'perspective(30em) rotateY(-30deg)',
+      transform: 'perspective(50em) rotateY(-30deg)',
       borderRadius: '5px',
-      maxWidth: '300px',
-      width: '300px',
+      maxWidth: '500px',
+      width: '500px',
       display:'inline-block',
       boxShadow: '2em 2em 2em gray'
     }
