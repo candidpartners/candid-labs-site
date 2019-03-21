@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Volker
-image: /img/automate.jpg
+image: /img/thinking-leader.jpg
 heading: Migrate to the Cloud. Fast.
 subheading: Cloud Automation Platform
 mainpitch:

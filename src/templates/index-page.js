@@ -18,16 +18,18 @@ export const IndexPageTemplate = ({
 }) => (
     <div>
       <div
-        id="wave"
-        className="full-width-image margin-top-0"
+        className="full-width-image margin-top-0 index-banner-image"
         style={{
           backgroundImage: `url(${
             !!image.childImageSharp
               ? image.childImageSharp.fluid.src
               : image
           })`,
+          width: '100%',
           backgroundPosition: `top left`,
-          height: '100vh'
+          height: '100vh',
+          backgroundColor: 'rgba(0, 0, 0, .5)',
+          position: 'static'
         }}
       >
       <div className='index-page-banner'>
@@ -48,13 +50,13 @@ export const IndexPageTemplate = ({
               <div className="content">
                 <div style={{ marginBottom: '10em'}}>
                   <h1 className="title" style={{ fontSize: '8em' }}>{mainpitch.title}</h1>
-                  <h2 className="subtitle" style={{ marginTop: '3em', marginLeft: '3em' }}>{mainpitch.description}</h2>
+                  <h2 className="subtitle" style={{ marginTop: '3em', marginLeft: '3em', lineHeight: '2' }}>{mainpitch.description}</h2>
                 </div>
               </div>
               <div className="content">
                 <div  style={{ marginBottom: '11em'}}>
                   <h1 className="title" style={{ fontSize: '5em' }}>{heading}</h1>
-                  <h3 className="subtitle" style={{ marginTop: '4em', marginLeft: '3em' }}>{description}</h3>
+                  <h3 className="subtitle" style={{ marginTop: '4em', marginLeft: '3em', lineHeight: '2' }}>{description}</h3>
                 </div>
               </div>
               <Features gridItems={intro.blurbs} />

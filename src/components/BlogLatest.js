@@ -16,7 +16,7 @@ class BlogLatest extends React.Component {
         >
           <article>
             <p>
-              <Link to={post.fields.slug} className="title is-size-3"  style={{ color: 'white'}}>
+              <Link to={post.fields.slug} className="title is-size-3"  style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
                 {post.frontmatter.title}
               </Link>
               <br />
@@ -25,7 +25,7 @@ class BlogLatest extends React.Component {
             </p>
             <br />
             <p>
-              <Link className="btn" to={post.fields.slug}>
+              <Link className="btn" to={post.fields.slug} style={{ borderWidth: '3px', fontWeight: '600'}}>
                   Read More →
               </Link>
             </p>

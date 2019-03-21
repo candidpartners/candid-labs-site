@@ -33,7 +33,7 @@ export const ProductPageTemplate = ({
 }) => (
 <section className="section section--gradient">
   <div
-    className="full-width-image-container margin-top-0"
+    className="full-width-image-container margin-top-0 product-banner-img"
     style={{
       backgroundImage: `url(${
         !!image.childImageSharp
@@ -44,13 +44,13 @@ export const ProductPageTemplate = ({
       height: '95vh'
     }}
   >
-  <div style={{ margin: '0 3em'}}>
+  <div style={{ margin: '0 3em', zIndex: '3'}}>
     <h2
       className="has-text-weight-bold"
       style={{
         fontSize: '4em',
-        opacity: '0.7',
-        color: 'rgb(255, 255, 255)',
+        opacity: '0.8',
+        color: 'rgb(255, 255, 255)'
       }}
     >
       {title}
@@ -59,7 +59,7 @@ export const ProductPageTemplate = ({
           style={{
             fontSize: '2em',
             marginTop: '.5em',
-            color: 'rgb(255, 255, 255)',
+            color: 'rgb(255, 255, 255)'
           }}
       >
         {subheading}
@@ -82,7 +82,7 @@ export const ProductPageTemplate = ({
               <Features gridItems={intro.blurbs} />
               <div className="columns">
                 <div>
-                  <h3 className="has-text-weight-semibold is-size-3">
+                  <h3 className="has-text-weight-semibold is-size-3 has-text-centered">
                     {main.heading}
                   </h3>
                   <p>{main.description}</p>

@@ -4,7 +4,7 @@ title: Enterprise Cloud Automation
 subheading: >-
   Plan, Provision, and ensure your entire cloud migration journey is compliant
   with organizational and regulatory standards.
-image: /img/rockets.jpg
+image: /img/staff-meeting.jpg
 heading: Enterprise Cloud Automation
 description: >-
   Plan, Provision, and ensure your entire cloud migration journey is compliant

@@ -58,7 +58,7 @@ body
     font-size: 18px
     font-size: 1rem
     line-height: 1.25
-    background-color: #fff
+    background-color: rgba(0, 0, 0, 0)
     border-radius: .25rem
     text-decoration: none
     font-weight: 700
@@ -71,7 +71,7 @@ body
 .btn:hover 
   color: white
   background: $primary
-  border: none
+  border: 1px solid rgba(0, 0, 0, 0)
 
 .margin-top-0
   margin-top: 0 !important
@@ -135,10 +135,13 @@ $menu-label-color: $white-ter
   line-height: 1
   margin-top: .5em
   color: rgb(255, 255, 255)
+  opacity: 0.8
+  z-index: 3
 
 .has-text-weight-bold.index-head
-  font-size: 10em
+  font-size: 12em
   color: rgb(255, 255, 255)
+  z-index: 3
 
 .index-page-banner
   display: flex
@@ -158,7 +161,30 @@ $menu-label-color: $white-ter
   margin-left: .2em
   font-size: 6em
   &:hover
-    color: gray
+    color: $primary
+
+.full-width-image.margin-top-0.index-banner-image:before
+  content: ""
+  top: 0
+  left: 0
+  height: 100vh
+  width: 100%
+  background-color: rgba(0,0,0,0.3)
+  background-size: 100% 100%
+  z-index: 2
+  position: absolute
+
+// product page
+.full-width-image-container.margin-top-0.product-banner-img:before
+  content: ""
+  top: 0
+  left: 0
+  height: 95vh
+  width: 100%
+  background-color: rgba(0,0,0,0.3)
+  background-size: 100% 100%
+  z-index: 2
+  position: absolute
 
 //pricing modules
 
@@ -205,6 +231,18 @@ $menu-label-color: $white-ter
 
 .full-width-image-container.margin-top-0.blog-img:hover:before
   opacity: 0.5
+
+//contact page
+.full-width-image-container.contact-banner-img:before
+  content: ""
+  top: 0
+  left: 0
+  height: 100vh
+  width: 100%
+  background-color: rgba(0,0,0,0.5)
+  background-size: 100% 100%
+  z-index: 2
+  position: absolute
 
 
 @import "~bulma"
