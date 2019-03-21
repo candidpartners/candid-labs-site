@@ -12,7 +12,7 @@ const Pricing = ({ data }) => (
             </h4>
           </div>
           <h2 className="has-text-weight-bold has-text-primary">
-            ${price.price}
+            {price.price}
           </h2>
           <p className="has-text-weight-semibold">{price.description}</p>
           <ul style={{ listStyle: 'none', marginLeft: '0'}}>

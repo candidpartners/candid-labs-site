@@ -104,8 +104,8 @@ pricing:
         - Generate Terraform 10 times for an Application
         - Generate Terraform 10 times for up to 5 AWS accounts
         - Run CIS compliance in your pipeline and live accounts
-      plan: Small
-      price: '500'
+      plan: Fixed
+      price: '$500'
     - description: >-
         Talk with us and find out how to migrate hundreds of applications within
         your organization
@@ -114,6 +114,6 @@ pricing:
         - Analyze thousands of servers
         - Unlimited Terraform generation
       plan: Custom
-      price: '?'
+      price: 'Tailored'
 ---
 
