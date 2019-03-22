@@ -5,10 +5,7 @@ const Slide = ({ image, heading, subheading }) => {
         <div className="full-width-image margin-top-0 slide index-banner-image" 
           style={{ 
             backgroundImage: `url(${image})`,
-            transition: 'linear 1s',
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: '50% 60%'
+            transition: 'linear .5s'
         }}>
             <div className='index-page-banner'>
                 <h1 className="has-text-weight-bold index-head">

@@ -15,48 +15,28 @@ export const IndexPageTemplate = ({
       <div style={{ position: 'relative', marginBottom: '5em' }}>
         <Slider text={slideText} />
       </div>
-      
-      {/* <div
-        className="full-width-image margin-top-0 index-banner-image"
-        style={{
-          backgroundImage: `url(${
-            !!image.childImageSharp
-              ? image.childImageSharp.fluid.src
-              : image
-          })`
-        }}
-      >
-        <div className='index-page-banner'>
-          <h1 className="has-text-weight-bold index-head">
-            {title}
-          </h1>
-          <h3 className="has-text-weight-bold index-subhead">
-            {subheading}
-          </h3>
-        </div>
-      </div> */}
-  <section className="section section--gradient">
-    <div className="container">
-      <div className="section">
-        <div className="columns">
-          <div className="column is-12">
-            <div className="content">
-              <Features gridItems={intro.blurbs} />
-              <div className="columns">
-              <div className="column is-12 has-text-centered products-link-div">
-                <h3>See all products</h3>
-                <Link to="/products">
-                  <i class="fas fa-chevron-right"></i>
-                </Link>
+      <section className="section section--gradient">
+        <div className="container">
+          <div className="section">
+            <div className="columns">
+              <div className="column is-12">
+                <div className="content">
+                  <Features gridItems={intro.blurbs} />
+                  <div className="columns">
+                    <div className="column is-12 has-text-centered products-link-div">
+                      <h3>See all products</h3>
+                      <Link to="/products">
+                        <i class="fas fa-chevron-right"></i>
+                      </Link>
+                    </div>
+                  </div>
                 </div>
               </div>
-              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
-  </section>
-  </div>
 )
 
 IndexPageTemplate.propTypes = {

@@ -9,10 +9,7 @@ text:
     subheading: >-
       The Volker Cloud Automation Platform provides DevOps and migration teams with
       Planning, Provisioning, and Compliance capabilities to facilitate factory
-      scale cloud initiatives. As an integral part of Candid Cloud Factory, Volker
-      makes it easy to specify and auto-generate the infrastructure components you
-      want to deploy, allowing enterprises to transition to the cloud efficiently,
-      consistently, and securely.
+      scale cloud initiatives.
   - heading: Why Volker?
     subheading:  >-
       Candid Labs provides cloud automation software that helps organizations plan
