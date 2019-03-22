@@ -1,6 +1,6 @@
 ---
 templateKey: 'support-page'
 path: /support
-title: How to get Support
+title: Having problems? Let us help you
+image: '/img/support-img.jpg'
 ---
-### We support our stuff

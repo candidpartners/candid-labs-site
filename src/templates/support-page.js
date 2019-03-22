@@ -2,51 +2,63 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
 
-export const SupportPageTemplate = ({ title, content, contentComponent }) => {
-  const PageContent = contentComponent || Content
 
-  return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <PageContent className="content" content={content} />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  )
-}
+
+
+export const SupportPageTemplate = ({
+  image,
+  title,
+}) => (
+<section className="section section--gradient" style={{ paddingTop: '0'}}>
+  <div
+    className="full-width-image-container margin-top-0 support-banner-img"
+    style={{
+      backgroundImage: `url(${
+        !!image.childImageSharp
+          ? image.childImageSharp.fluid.src
+          : image
+      })`,
+      height: '70vh'
+    }}
+  >
+    <div className="support-banner-header">
+      <h2 className="has-text-weight-bold support-head">
+        {title}
+      </h2>
+    </div>
+  </div>
+  <div className="support-text">
+    Support can be reached via email at info@candidlabs.io.<br />
+    You will recieve a response within 4 business hours.
+  </div>
+</section>
+)
 
 SupportPageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
+  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  title: PropTypes.string,
 }
 
 const SupportPage = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { frontmatter } = data.markdownRemark
 
   return (
     <Layout>
       <SupportPageTemplate
-        contentComponent={HTMLContent}
-        title={post.frontmatter.title}
-        content={post.html}
+        image={frontmatter.image}
+        title={frontmatter.title}
       />
     </Layout>
   )
 }
 
 SupportPage.propTypes = {
-  data: PropTypes.object.isRequired,
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.shape({
+      frontmatter: PropTypes.object,
+    }),
+  }),
 }
 
 export default SupportPage
@@ -54,9 +66,15 @@ export default SupportPage
 export const supportPageQuery = graphql`
   query SupportPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
-      html
       frontmatter {
         title
+        image {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }
