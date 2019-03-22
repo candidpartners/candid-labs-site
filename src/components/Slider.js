@@ -1,8 +1,5 @@
 import React from 'react'
 import Slide from './Slide'
-import RightArrow from './RightArrow'
-import LeftArrow from './LeftArrow'
-import Dots from './Dots'
 
 class Slider extends React.Component {
     constructor(props){
@@ -12,28 +9,6 @@ class Slider extends React.Component {
             currentSlide: 0,
             slideText: props.text
         }
-    }
-
-    goBack = () => {
-        if(this.state.currentSlide - 1 < 0) {
-            return this.setState({
-                currentSlide: this.state.images.length - 1 
-            })
-          }
-          this.setState( prevState => ({
-            currentSlide: prevState.currentSlide - 1
-          }))
-    }
-
-    goForward = () => {
-      if(this.state.currentSlide === this.state.images.length - 1) {
-        return this.setState({
-            currentSlide: 0
-        })
-      }
-      this.setState( prevState => ({
-        currentSlide: prevState.currentSlide + 1
-      }))
     }
 
     handleClickOne = () => {
