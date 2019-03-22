@@ -2,13 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
-const FeatureGrid = ({ gridItems }) => (
+const FeatureGrid = ({ gridItems, curve }) => (
   <div>
     {gridItems.map((item, index) => {
       if(index%2){
         return (
           <div key={item.text} className="features-container">
-              <PreviewCompatibleImage className="features-img" imageInfo={item.image} side='left'/>
+              <PreviewCompatibleImage className="features-img" imageInfo={item.image} curve={curve} side='left'/>
               <p className="features-text">{item.text}</p>
           </div>
         ) 
@@ -17,7 +17,7 @@ const FeatureGrid = ({ gridItems }) => (
         return (
           <div key={item.text} className="features-container">
             <p className="features-text">{item.text}</p>
-            <PreviewCompatibleImage className="features-img" side='right' imageInfo={item.image} />
+            <PreviewCompatibleImage className="features-img" side='right' curve={curve} imageInfo={item.image} />
           </div>
         ) 
       }

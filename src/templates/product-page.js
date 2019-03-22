@@ -64,19 +64,13 @@ export const ProductPageTemplate = ({
                   <MarkdownContent content={intro.description} />
                 </div>
               </div>
-              <div style={{ margin: '10em auto'}}>
-                <Features gridItems={intro.blurbs} />
-              </div>
-              <div className="columns">
-                <div>
-                  <h3 className="has-text-weight-semibold is-size-3 has-text-centered">
+                <Features gridItems={intro.blurbs} curve={true}/>
+                  <h3 className="has-text-weight-semibold is-size-2 has-text-centered"  style={{ marginTop: '3em' }}>
                     {main.heading}
                   </h3>
                   <p>{main.description}</p>
-                </div>
-              </div>
               <Testimonials testimonials={testimonials} />
-              <h2 className="has-text-weight-semibold is-size-2 has-text-centered">
+              <h2 className="has-text-weight-semibold is-size-2 has-text-centered" style={{ marginTop: '3em' }}>
                 {pricing.heading}
               </h2>
               <p className="is-size-5">{pricing.description}</p>

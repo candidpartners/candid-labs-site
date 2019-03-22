@@ -3,11 +3,11 @@ import PropTypes from 'prop-types'
 import { v4 } from 'uuid'
 
 const Testimonials = ({ testimonials }) => (
-  <div style={{ overflow: 'hidden', margin: '3em'}} className="columns">
+  <div className="columns">
     {testimonials.map(( testimonial ) => {
       return (
-        <section key={v4()} className="testimonial column is-6" style={{ margin: '2em' }} >
-          <div style={{ padding: '1em'  }}>  
+        <section key={v4()} className="column is-6 text-is-centered" >
+          <div className="testimonial" style={{ padding: '1em' }}>  
             {testimonial.quote}
             <br />
             <br />

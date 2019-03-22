@@ -2,27 +2,20 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Img from 'gatsby-image'
 
-const PreviewCompatibleImage = ({ imageInfo, side }) => {
-  let imageStyle
-  if(side === 'left'){
-    imageStyle = { 
-      transform: 'perspective(50em) rotateY(30deg)',
+const PreviewCompatibleImage = ({ imageInfo, side, curve }) => {
+  let imageStyle = { 
       borderRadius: '5px',
       maxWidth: '500px',
       width: '500px',
       display:'inline-block',
       boxShadow: '2em 2em 2em gray'
-    }
   }
-  if(side === 'right'){
-    imageStyle = { 
-      transform: 'perspective(50em) rotateY(-30deg)',
-      borderRadius: '5px',
-      maxWidth: '500px',
-      width: '500px',
-      display:'inline-block',
-      boxShadow: '2em 2em 2em gray'
-    }
+  if(curve) {
+    side === 'right' ? imageStyle.transform = 'perspective(50em) rotateY(-30deg)' : imageStyle.transform = 'perspective(50em) rotateY(30deg)'
+  } else {
+    imageStyle.width = '300px'
+    imageStyle.maxWidth = '300px'
+    imageStyle.boxShadow = 'none'
   }
   
   const { alt = '', childImageSharp, image } = imageInfo

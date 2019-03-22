@@ -18,9 +18,9 @@ export const IndexPageTemplate = ({
         <div className="container">
           <div className="section">
             <div className="columns">
-              <div className="column is-12">
+              <div className="column is-10 is-offset-1">
                 <div className="content">
-                  <Features gridItems={intro.blurbs} />
+                  <Features gridItems={intro.blurbs} curve={false} />
                   <div className="columns">
                     <div className="column is-12 has-text-centered products-link-div">
                       <h3>See all products</h3>

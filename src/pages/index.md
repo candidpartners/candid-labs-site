@@ -21,18 +21,18 @@ text:
       they are ever deployed to the cloud and continually after they are deployed.
 intro:
   blurbs:
-    - image: /img/plan.jpg
+    - image: /img/plan2.png
       text: >-
         Volker makes it easy for IT teams to characterize every application and
         server. Leveraging an industry-defining programmatic approach, Volker
         creates a view of the relative business value of each application and
         the complexity of migrating the applications to the cloud.
-    - image: /img/build.jpg
+    - image: /img/build2.png
       text: >
         Generating the code required to accomplish the necessary application and
         account level setup, Volker creates and configures your infrastructure,
         so your application teams can directly integrate their code.
-    - image: /img/secure.jpg
+    - image: /img/secure2.png
       text: >
         Volker adds automation steps within a CI/CD pipeline to ensure the
         infrastructure, configuration, and software meet compliance standards
