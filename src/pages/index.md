@@ -3,22 +3,22 @@ templateKey: index-page
 title: Volker
 images:
   - image: /img/thinking-leader.jpg
-  - image: /img/laptop-meeting.jpg
   - image: /img/overhead-meeting.jpg
+  - image: /img/laptop-meeting.jpg
 text:
   - heading: Volker
     subheading: Cloud Automation Platform
-  - heading: Migrate to the Cloud. Fast.
-    subheading: >-
-      The Volker Cloud Automation Platform provides DevOps and migration teams with
-      Planning, Provisioning, and Compliance capabilities to facilitate factory
-      scale cloud initiatives.
   - heading: Why Volker?
     subheading:  >-
       Candid Labs provides cloud automation software that helps organizations plan
       their journey to the cloud, provision cloud based infrastructure resources
       using DevOps best practices, and ensure those resources are secure before
       they are ever deployed to the cloud and continually after they are deployed.
+  - heading: Migrate to the Cloud. Fast.
+    subheading: >-
+      The Volker Cloud Automation Platform provides DevOps and migration teams with
+      Planning, Provisioning, and Compliance capabilities to facilitate factory
+      scale cloud initiatives.
 intro:
   blurbs:
     - image: /img/plan2.png
