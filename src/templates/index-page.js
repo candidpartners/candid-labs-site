@@ -4,16 +4,15 @@ import { Link, graphql } from 'gatsby'
 import Slider from '../components/Slider'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
-import BlogRoll from '../components/BlogRoll'
 
 export const IndexPageTemplate = ({
-  image,
+  images,
   slideText,
   intro,
 }) => (
     <div>
       <div style={{ position: 'relative', marginBottom: '5em' }}>
-        <Slider text={slideText} />
+        <Slider text={slideText} images={images} />
       </div>
       <section className="section section--gradient">
         <div className="container">
@@ -40,7 +39,7 @@ export const IndexPageTemplate = ({
 )
 
 IndexPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  images: PropTypes.array,
   title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
@@ -57,7 +56,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <IndexPageTemplate
-        image={frontmatter.image}
+        images={frontmatter.images}
         title={frontmatter.title}
         slideText={frontmatter.text}
         intro={frontmatter.intro}
@@ -81,10 +80,12 @@ query IndexPageTemplate {
   markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
       frontmatter {
         title
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
+        images {
+          image {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
             }
           }
         }

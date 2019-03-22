@@ -5,7 +5,7 @@ class Slider extends React.Component {
     constructor(props){
         super(props)
         this.state={
-            images: ['/img/thinking-leader.jpg', '/img/laptop-meeting.jpg', 'img/overhead-meeting.jpg' ],
+            images: props.images,
             currentSlide: 0,
             slideText: props.text
         }
@@ -47,7 +47,7 @@ class Slider extends React.Component {
             <div className="slider" style={{ position: 'relative' }}>
               <div className="slider-wrapper">
                 <Slide 
-                  image={images[currentSlide]}
+                  image={images[currentSlide].image}
                   heading={slideText[currentSlide].heading}
                   subheading={slideText[currentSlide].subheading}
                 />
