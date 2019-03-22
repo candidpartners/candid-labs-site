@@ -17,8 +17,8 @@ const Pricing = ({ data }) => (
           <p className="has-text-weight-semibold">{price.description}</p>
           <ul style={{ listStyle: 'none', marginLeft: '0'}}>
             {price.items.map(item => (
-              <li key={item} className="is-size-6">
-                <i class="far fa-check-circle" style={{ color: '#D64000' }}></i> {item}
+              <li key={item} className="is-size-6" style={{ marginBottom: '15px' }}>
+                <p style={{ marginLeft:'1px', display:'inline-block' }}><i class="far fa-check-circle" style={{ color: '#D64000' }}></i> </p><p style={{ marginLeft:'3px', position: 'absolute', width: '20%', display:'inline-block' }}>{item}</p>
               </li>
             ))}
           </ul>

@@ -114,6 +114,6 @@ pricing:
         - Analyze thousands of servers
         - Unlimited Terraform generation
       plan: Custom
-      price: 'Tailored'
+      price: 'Enterprise'
 ---
 
