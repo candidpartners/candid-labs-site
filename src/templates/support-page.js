@@ -1,63 +1,163 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
+import { navigate } from 'gatsby-link'
 
-export const SupportPageTemplate = ({ title, content, contentComponent }) => {
-  const PageContent = contentComponent || Content
-
-  return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <PageContent className="content" content={content} />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  )
+function encode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&')
 }
 
-SupportPageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
-}
-
-const SupportPage = ({ data }) => {
-  const { markdownRemark: post } = data
-
-  return (
-    <Layout>
-      <SupportPageTemplate
-        contentComponent={HTMLContent}
-        title={post.frontmatter.title}
-        content={post.html}
-      />
-    </Layout>
-  )
-}
-
-SupportPage.propTypes = {
-  data: PropTypes.object.isRequired,
-}
-
-export default SupportPage
-
-export const supportPageQuery = graphql`
-  query SupportPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      html
-      frontmatter {
-        title
-      }
-    }
+export default class SupportPageTemplate extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { isValidated: false }
   }
-`
+
+  handleChange = e => {
+    this.setState({ [e.target.name]: e.target.value })
+  }
+
+  handleSubmit = e => {
+    e.preventDefault()
+    const form = e.target
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({
+        'form-name': form.getAttribute('name'),
+        ...this.state,
+      }),
+    })
+      .then(() => navigate(form.getAttribute('action')))
+      .catch(error => alert(error))
+  } 
+  render(){
+    return (
+      <Layout>
+        <div className="support-form">
+        <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+          Let us help you...
+        </h2>
+        <h3>Fill out the form below, or email us at info@candidlabs.io</h3>
+        <br />
+        <br />
+        <div>
+          <form
+            name="support"
+            method="post"
+            action="/support/thanks/"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            onSubmit={this.handleSubmit}
+          >
+          {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+            <input type="hidden" name="form-name" value="contact" />
+            <div hidden>
+              <label>
+                Don’t fill this out:{' '}
+                <input name="bot-field" onChange={this.handleChange} />
+              </label>
+            </div>
+            <div className="field">
+              <label className="label" htmlFor={'firstName'}>
+                First Name
+              </label>
+              <div className="control">
+                <input
+                  className="input"
+                  type={'text'}
+                  name={'firstName'}
+                  onChange={this.handleChange}
+                  id={'firstName'}
+                  required={true}
+                />
+              </div>
+            </div>
+            <div className="field">
+              <label className="label" htmlFor={'lastName'}>
+                Last Name
+              </label>
+              <div className="control">
+                <input
+                  className="input"
+                  type={'text'}
+                  name={'lastName'}
+                  onChange={this.handleChange}
+                  id={'lastName'}
+                  required={true}
+                />
+              </div>
+            </div>
+            <div className="field">
+              <label className="label" htmlFor={'email'}>
+                Email
+              </label>
+              <div className="control">
+                <input
+                  className="input"
+                  type={'email'}
+                  name={'email'}
+                  onChange={this.handleChange}
+                  id={'email'}
+                  required={true}
+                />
+              </div>
+            </div>
+            <div className="field">
+              <label className="label" htmlFor={'title'}>
+                Title
+              </label>
+              <div className="control">
+                <input
+                  className="input"
+                  type={'text'}
+                  name={'title'}
+                  onChange={this.handleChange}
+                  id={'title'}
+                  required={true}
+                />
+              </div>
+            </div>
+            <div className="field">
+              <label className="label" htmlFor={'company'}>
+                Company
+              </label>
+              <div className="control">
+                <input
+                  className="input"
+                  type={'text'}
+                  name={'company'}
+                  onChange={this.handleChange}
+                  id={'company'}
+                  required={true}
+                />
+              </div>
+            </div>
+            <div className="field">
+              <label className="label" htmlFor={'reason'}>
+                Reason for requesting support
+              </label>
+              <div className="control">
+                <textarea
+                  className="textarea"
+                  name={'reason'}
+                  onChange={this.handleChange}
+                  id={'reason'}
+                  required={true}
+                />
+              </div>
+            </div>
+            <div className="field">
+              <button className="button is-link contact-button" type="submit">
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+        </div>
+      </Layout>
+    )
+  }
+}

@@ -37,7 +37,7 @@ export default class Index extends React.Component {
     return (
       <Layout>
             <div className="content contact-banner">
-             <div className="full-width-image-container contact-banner-img" style={{ backgroundImage: `url('/img/contact.jpg')` }} >
+              <div className="full-width-image-container contact-banner-img" style={{ backgroundImage: `url('/img/contact.jpg')` }} >
                 <h1 className="contact-banner-header" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
                   <span> Send us a message </span> <br /> we'd love to hear from you 
                 </h1>

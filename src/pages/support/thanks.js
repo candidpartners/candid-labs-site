@@ -5,7 +5,7 @@ export default () => (
   <Layout>
     <section className="section">
       <div className="container">
-        <div className="content">
+        <div className="content"  style={{ margin: '10em' }}>
           <h1>Thank you!</h1>
           <p>We will respond as soon as possible</p>
         </div>
