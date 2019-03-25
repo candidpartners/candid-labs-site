@@ -18,8 +18,7 @@ export const SupportPageTemplate = ({
         !!image.childImageSharp
           ? image.childImageSharp.fluid.src
           : image
-      })`,
-      height: '70vh'
+      })`
     }}
   >
     <div className="support-banner-header">
