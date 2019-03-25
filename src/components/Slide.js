@@ -9,7 +9,8 @@ const Slide = ({ image, heading, subheading }) => {
                     ? image.childImageSharp.fluid.src
                     : image
                 })`,
-                transition: 'linear .5s'
+                transition: 'linear .5s',
+                margin: '0'
             }}
             >
         
