@@ -2,9 +2,9 @@
 templateKey: index-page
 title: Volker
 images:
-  - image: /img/thinking-leader.jpg
-  - image: /img/overhead-meeting.jpg
-  - image: /img/laptop-meeting.jpg
+  - image: /img/thinking-leader.webp
+  - image: /img/overhead-meeting.webp
+  - image: /img/laptop-meeting.webp
 text:
   - heading: Volker
     subheading: Cloud Automation Platform

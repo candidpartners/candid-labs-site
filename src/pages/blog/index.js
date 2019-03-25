@@ -14,7 +14,7 @@ export default class BlogIndexPage extends React.Component {
             <div className="content">
               <div
                 className="full-width-image-container margin-top-0 blog-banner-img"
-                style={{ backgroundImage: `url('/img/blogs-img.jpg')` }}
+                style={{ backgroundImage: `url('/img/blogs-img.webp')` }}
               >
               <div className="blog-banner-text">
                 <h1 className="has-text-weight-bold blog-banner-h1">
