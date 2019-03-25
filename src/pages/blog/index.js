@@ -25,7 +25,7 @@ export default class BlogIndexPage extends React.Component {
                   Candid Labs
                 </h1>
                 <div className="latest-blog-container">
-                  <BlogLatest />
+                  <BlogLatest className="blog-latest" />
                 </div> 
               </div>
               </div>
