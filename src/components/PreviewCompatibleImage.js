@@ -6,14 +6,14 @@ const PreviewCompatibleImage = ({ imageInfo, side, curve }) => {
   let imageStyle = { 
       borderRadius: '5px',
       maxWidth: '500px',
-      width: '500px',
+      width: '30vw',
       display:'inline-block',
       boxShadow: '2em 2em 2em gray'
   }
   if(curve) {
     side === 'right' ? imageStyle.transform = 'perspective(50em) rotateY(-30deg)' : imageStyle.transform = 'perspective(50em) rotateY(30deg)'
   } else {
-    imageStyle.width = '300px'
+    imageStyle.width = '30vw'
     imageStyle.maxWidth = '300px'
     imageStyle.boxShadow = 'none'
   }
@@ -22,16 +22,16 @@ const PreviewCompatibleImage = ({ imageInfo, side, curve }) => {
 
   if (!!image && !!image.childImageSharp) {
     return (
-      <Img style={imageStyle} fluid={image.childImageSharp.fluid} alt={alt} />
+      <Img style={imageStyle} fluid={image.childImageSharp.fluid} alt={alt} className="pre-img" />
     )
   }
 
   if (!!childImageSharp) {
-    return <Img style={imageStyle} fluid={childImageSharp.fluid} alt={alt} />
+    return <Img style={imageStyle} fluid={childImageSharp.fluid} alt={alt} className="pre-img" />
   }
 
   if (!!image && typeof image === 'string')
-    return <img style={imageStyle} src={image} alt={alt} />
+    return <img style={imageStyle} src={image} alt={alt} className="pre-img" />
 
   return null
 }
