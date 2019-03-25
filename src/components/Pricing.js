@@ -15,10 +15,10 @@ const Pricing = ({ data }) => (
             {price.price}
           </h2>
           <p className="has-text-weight-semibold">{price.description}</p>
-          <ul style={{ listStyle: 'none', marginLeft: '0'}}>
+          <ul className="ul pricing">
             {price.items.map(item => (
-              <li key={item} className="is-size-6" style={{ marginBottom: '15px' }}>
-                <p style={{ marginLeft:'1px', display:'inline-block' }}><i class="far fa-check-circle" style={{ color: '#D64000' }}></i> </p><p style={{ marginLeft:'3px', position: 'absolute', width: '80%', display:'inline-block' }}>{item}</p>
+              <li key={item} className="is-size-6 li pricing">
+                <p className="icon li pricing"><i class="far fa-check-circle"></i> </p><p className="pricing info li">{item}</p>
               </li>
             ))}
           </ul>
