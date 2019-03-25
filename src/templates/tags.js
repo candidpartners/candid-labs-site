@@ -27,8 +27,7 @@ class TagRoute extends React.Component {
           <div className="container content">
             <div className="columns">
               <div
-                className="column is-10 is-offset-1"
-                style={{ marginBottom: '6rem' }}
+                className="column is-10 is-offset-1 tag-container"
               >
                 <h3 className="title is-size-4 is-bold-light">{tagHeader}</h3>
                 <ul className="taglist">{postLinks}</ul>

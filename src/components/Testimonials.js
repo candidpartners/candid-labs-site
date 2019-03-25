@@ -7,7 +7,7 @@ const Testimonials = ({ testimonials }) => (
     {testimonials.map(( testimonial ) => {
       return (
         <section key={v4()} className="column is-6 text-is-centered" >
-          <div className="testimonial" style={{ padding: '1em' }}>  
+          <div className="testimonial">  
             {testimonial.quote}
             <br />
             <br />

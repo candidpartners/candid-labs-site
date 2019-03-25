@@ -65,12 +65,12 @@ export const ProductPageTemplate = ({
                 </div>
               </div>
                 <Features gridItems={intro.blurbs} curve={true}/>
-                  <h3 className="has-text-weight-semibold is-size-2 has-text-centered"  style={{ marginTop: '3em' }}>
+                  <h3 className="has-text-weight-semibold is-size-2 has-text-centered product-header">
                     {main.heading}
                   </h3>
                   <p>{main.description}</p>
               <Testimonials testimonials={testimonials} />
-              <h2 className="has-text-weight-semibold is-size-2 has-text-centered" style={{ marginTop: '3em' }}>
+              <h2 className="has-text-weight-semibold is-size-2 has-text-centered product-header">
                 {pricing.heading}
               </h2>
               <p className="is-size-5">{pricing.description}</p>

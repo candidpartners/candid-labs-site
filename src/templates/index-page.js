@@ -11,7 +11,7 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
     <div>
-      <div style={{ position: 'relative', marginBottom: '5em' }}>
+      <div className="slide-container">
         <Slider text={slideText} images={images} />
       </div>
       <section className="section section--gradient">
