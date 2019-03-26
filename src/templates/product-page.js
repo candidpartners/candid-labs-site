@@ -7,6 +7,7 @@ import Features from '../components/Features'
 import Testimonials from '../components/Testimonials'
 import Pricing from '../components/Pricing'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import Img from 'gatsby-image'
 
 const converter = new showdown.Converter();
 
@@ -23,8 +24,6 @@ export const ProductPageTemplate = ({
   image,
   title,
   subheading,
-  heading,
-  description,
   intro,
   main,
   testimonials,
@@ -57,11 +56,11 @@ export const ProductPageTemplate = ({
         <div className="column is-12">
           <div className="content">
               <div className="columns">
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-3">
+                <div className="column is-12 has-text-centered">
+                  <h3 className="has-text-weight-semibold is-size-3" style={{ margin: '4em' }}>
                     {intro.heading}
                   </h3>
-                  <MarkdownContent content={intro.description} />
+                  <Img style={{ width: '100%', borderRadius: '30px', boxShadow: 'inset 0px 0px 40px 40px white' }} fluid={intro.image.childImageSharp.fluid} alt='volker difference'/>
                 </div>
               </div>
                 <Features gridItems={intro.blurbs} curve={true}/>
@@ -92,7 +91,7 @@ ProductPageTemplate.propTypes = {
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
     heading: PropTypes.string,
-    description: PropTypes.string
+    image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   }),
   main: PropTypes.shape({
     heading: PropTypes.string,
@@ -165,7 +164,13 @@ export const productPageQuery = graphql`
             text
           }
           heading
-          description
+          image {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
         main {
           heading

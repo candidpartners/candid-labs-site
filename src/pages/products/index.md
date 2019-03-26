@@ -42,29 +42,7 @@ intro:
         multiple migration approaches so that the right approach is chosen and
         understood by the entire team.
   heading: 60% of all cloud initiatives fail. None of ours have.
-  description: |
-    _What makes Volker different than other tools?_
-    1. Volker is the only enterprise end-to-end multi-cloud automation solution  
-    1. Volker is the most effective tool in automating repetitive and manual dev ops activities 
-    1. Volker is the only tool that automates all three vital aspects of an enterprise migration
-        - Planning, Provisioning, and Compliance
-    1. Volker is the only tool that automates all six stages of the journey to cloud 
-        - Business evaluation
-        - Technology/business analysis
-        - Foundation 
-        - Provisioning/deployment
-        - Continuous delivery
-        - Reimagining the business
-    1. Volker is the only solution that provides and automates industry standard best practices for cloud deployments 
-    1. Volker includes a security framework and best practices to ensure a compliant cloud foundation
-    1. Volker provides a ready-made cloud foundation framework for rapid adoption of any public cloud platform
-    1. Volker is the only end to end cloud automation solution built on open standards
-    1. Volker provides the only solution that fully secures client infrastructure before and after it’s provisioned
-    1. Volker is the only enterprise-grade end to end automation tool deployed in F500 companies
-    1. Volker is the only tool with a customizable scoring model that prioritizes application migration based on business value 
-    1. Volker is the only cloud automation tool that is truly federated to allow teams to migrate at their own pace
-    1. Volker is the only solution that provides a single source of truth across an entire enterprise cloud migration 
-    1. Volker is the only cloud automation solution actually built by cloud architects for cloud architects.
+  image: /img/volker-diff.jpg
 main:
   heading: Cloud DevOps for the Enterprise
   description: >+
