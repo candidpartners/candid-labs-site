@@ -57,7 +57,7 @@ export const ProductPageTemplate = ({
           <div className="content">
               <div className="columns">
                 <div className="column is-12 has-text-centered">
-                  <h3 className="has-text-weight-semibold is-size-3" style={{ margin: '4em' }}>
+                  <h3 className="has-text-weight-semibold is-size-3" style={{ margin: '4em auto' }}>
                     {intro.heading}
                   </h3>
                   <Img style={{ width: '100%', borderRadius: '30px', boxShadow: '0 0 8px 8px white inset' }} fluid={intro.image.childImageSharp.fluid} alt='volker difference'/>
