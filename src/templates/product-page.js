@@ -60,7 +60,7 @@ export const ProductPageTemplate = ({
                   <h3 className="has-text-weight-semibold is-size-3" style={{ margin: '4em' }}>
                     {intro.heading}
                   </h3>
-                  <Img style={{ width: '100%', borderRadius: '30px', boxShadow: 'inset 0px 0px 40px 40px white' }} fluid={intro.image.childImageSharp.fluid} alt='volker difference'/>
+                  <Img style={{ width: '100%', borderRadius: '30px', boxShadow: '0 0 8px 8px white inset' }} fluid={intro.image.childImageSharp.fluid} alt='volker difference'/>
                 </div>
               </div>
                 <Features gridItems={intro.blurbs} curve={true}/>
