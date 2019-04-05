@@ -28,7 +28,7 @@ export const SupportPageTemplate = ({
     </div>
   </div>
   <div className="support-text">
-    Support can be reached via email at info@candidlabs.io.<br />
+    Support can be reached via email at <span style={{ unicodeBidi: "bidi-override", direction: "rtl" }}>oi.sba</span><span className="null">{null}</span><span style={{ unicodeBidi: "bidi-override", direction: "rtl" }}>ldidn</span><span className="null">{null}</span><span style={{ unicodeBidi: "bidi-override", direction: "rtl" }}>ac@o</span><span className="null">{null}</span><span style={{ unicodeBidi: "bidi-override", direction: "rtl" }}>fni</span>.<br />
     You will recieve a response within 4 business hours.
   </div>
 </section>
