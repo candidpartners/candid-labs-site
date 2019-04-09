@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
+import { productName } from '../config'
 import logo from '../img/CandidLabsLogo.png'
 import facebook from '../img/social/facebook.svg'
 import instagram from '../img/social/instagram.svg'
@@ -46,7 +46,7 @@ const Footer = class extends React.Component {
                       <li><Link className="navbar-item" to="/blog">Blog</Link></li>
                       <li><Link className="navbar-item" to="/contact">Contact</Link></li>
                       <li><Link className="navbar-item" to="/privacy">Privacy Policy</Link></li>
-                      <li><Link className="navbar-item" to="/volker-eula">Volker EULA</Link></li>
+                      <li><Link className="navbar-item" to="/volker-eula">{productName} EULA</Link></li>
                     </ul>
                   </section>
                 </div>

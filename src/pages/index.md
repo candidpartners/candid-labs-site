@@ -1,14 +1,14 @@
 ---
 templateKey: index-page
-title: Volker
 images:
   - image: /img/thinking-leader.webp
   - image: /img/overhead-meeting.webp
   - image: /img/laptop-meeting.webp
 text:
-  - heading: Volker
+  - heading: >-
+      %product%
     subheading: Cloud Automation Platform
-  - heading: Why Volker?
+  - heading: Why %product%?
     subheading:  >-
       Candid Labs provides cloud automation software that helps organizations plan
       their journey to the cloud, provision cloud based infrastructure resources
@@ -16,29 +16,29 @@ text:
       they are ever deployed to the cloud and continually after they are deployed.
   - heading: Migrate to the Cloud. Fast.
     subheading: >-
-      The Volker Cloud Automation Platform provides DevOps and migration teams with
+      The %product% Cloud Automation Platform provides DevOps and migration teams with
       Planning, Provisioning, and Compliance capabilities to facilitate factory
       scale cloud initiatives.
 intro:
   blurbs:
     - image: /img/plan2.png
       text: >-
-        Volker makes it easy for IT teams to characterize every application and
-        server. Leveraging an industry-defining programmatic approach, Volker
+        %product% makes it easy for IT teams to characterize every application and
+        server. Leveraging an industry-defining programmatic approach, %product%
         creates a view of the relative business value of each application and
         the complexity of migrating the applications to the cloud.
     - image: /img/build2.png
       text: >
         Generating the code required to accomplish the necessary application and
-        account level setup, Volker creates and configures your infrastructure,
+        account level setup, %product% creates and configures your infrastructure,
         so your application teams can directly integrate their code.
     - image: /img/secure2.png
       text: >
-        Volker adds automation steps within a CI/CD pipeline to ensure the
+        %product% adds automation steps within a CI/CD pipeline to ensure the
         infrastructure, configuration, and software meet compliance standards
         before they are ever deployed.
   heading: From Planning to Migration
-  description: Volker automates the entire process
+  description: Automate the entire process
 main:
   heading: Great coffee with no compromises
   description: >

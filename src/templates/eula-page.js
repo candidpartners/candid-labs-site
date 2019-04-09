@@ -3,17 +3,18 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import template from './variables'
 
 export const EULAPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
-
+  const interpolated = template(content)
   return (
     <section className="section section--gradient">
       <div className="container">
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <div className="section">
-              <PageContent className="content" content={content} />
+              <PageContent className="content" content={interpolated} />
             </div>
           </div>
         </div>

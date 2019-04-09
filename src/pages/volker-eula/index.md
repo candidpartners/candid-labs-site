@@ -6,7 +6,7 @@ path: /volker-eula
 
 Last updated: March 04, 2019
 
-Please read this End-User License Agreement ("Agreement") carefully before clicking the "I Agree" button, downloading or using Volker ("Application").
+Please read this End-User License Agreement ("Agreement") carefully before clicking the "I Agree" button, downloading or using %product% ("Application").
 
 By clicking the "I Agree" button, downloading or using the Application, you are agreeing to be bound by the terms and conditions of this Agreement.
 

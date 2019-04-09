@@ -1,4 +1,5 @@
 import React from 'react'
+import template from '../templates/variables'
 
 const Slide = ({ image, heading, subheading }) => {
     return (
@@ -14,10 +15,10 @@ const Slide = ({ image, heading, subheading }) => {
         
             <div className='index-page-banner'>
                 <h1 className="has-text-weight-bold index-head">
-                    {heading}
+                    {template(heading)}
                 </h1>
                 <h3 className="has-text-weight-bold index-subhead">
-                    {subheading}
+                    {template(subheading)}
                 </h3>
             </div>
         </div>

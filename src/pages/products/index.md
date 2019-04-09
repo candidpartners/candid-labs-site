@@ -14,21 +14,21 @@ intro:
     - image: /img/prioritize.png
       text: >-
         Whether you want to focus your cloud migrations on cost reductions, data
-        resiliency, or effects on business agility Volker allows you to develop
+        resiliency, or effects on business agility %product% allows you to develop
         multiple prioritization models based on business value and application
         complexity so that you can gain the right insight across all of the
         applications you need to migrate.
     - image: /img/questions.png
       text: >
         Understanding the applications that run in your organization is critical
-        to moving them to the cloud. Volker comes with over 100 industry proven
+        to moving them to the cloud. %product% comes with over 100 industry proven
         questions for understanding the specifics of your applications and
         allows you to customize those questions as well.
     - image: /img/map.png
       text: >
         Understanding the IT assets that your organization has across all of
         your data centers is crucial to ensuring your applications will run
-        effectively in the cloud. Volker offers the ability to map your existing
+        effectively in the cloud. %product% offers the ability to map your existing
         server assets into geographic locations so that you can analyze latency
         dependencies between your existing data centers and your new cloud based
         operational regions.
@@ -37,7 +37,7 @@ intro:
         There are so many options for migrating an application to the cloud that
         it can stall many cloud migration projects getting everyone involved to
         understand the pros and cons for different approaches. To make this
-        process more simple, Volker provides a consistent team based approach to
+        process more simple, %product% provides a consistent team based approach to
         evaluating the time, financial, and resource based constraints across
         multiple migration approaches so that the right approach is chosen and
         understood by the entire team.

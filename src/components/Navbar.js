@@ -12,7 +12,6 @@ const Navbar = class extends React.Component {
   }
 
   listenScrollEvent = (e) => {
-    console.log(window.scrollY)
     if (window.scrollY > 10) {
       this.setState({ position: 'navbar-scroll', size: 'small' })
     } else {
