@@ -1,3 +1,3 @@
 export default function template(content) {
-    return content.replace(/%(product)%/g, 'Volker');
+    return content.replace(/%(product)%/g, 'Matter');
   }
