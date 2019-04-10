@@ -73,7 +73,7 @@ export const ProductPageTemplate = ({
                 {pricing.heading}
               </h2>
               <p className="is-size-5" style={{ width: '80%', textAlign: 'center', marginLeft: '10%'}}>{pricing.description}</p>
-              <Img style={{ marginTop: '3em' }} fluid={pricing.image.childImageSharp.fluid} alt='matter pricing'/>
+              <Img style={{ margin: '5em auto 15em auto' }} fluid={pricing.image.childImageSharp.fluid} alt='matter pricing'/>
             </div>
           </div>
         </div>
