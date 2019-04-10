@@ -73,25 +73,8 @@ full_image: /img/accounts.png
 pricing:
   heading: Monthly subscriptions
   description: >-
-    We offer a Small introductory monthly pricing plan and an Enterprise plan
+    We offer a trial introductory monthly pricing plan, a SaaS monthly plan, and an Enterprise plan
     for the software delivered as a SaaS solution
-  plans:
-    - description: Perfect to try out moving a small number of applications
-      items:
-        - Import up to 100 of your existing servers for analysis
-        - Generate Terraform 10 times for an Application
-        - Generate Terraform 10 times for up to 5 AWS accounts
-        - Run CIS compliance in your pipeline and live accounts
-      plan: Fixed
-      price: '$500'
-    - description: >-
-        Talk with us and find out how to migrate hundreds of applications within
-        your organization
-      items:
-        - Integration with CI/CD systems
-        - Analyze thousands of servers
-        - Unlimited Terraform generation
-      plan: Custom
-      price: 'Enterprise'
+  image: /img/matter_pricing.png
 ---
 

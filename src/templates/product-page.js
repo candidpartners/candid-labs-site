@@ -5,7 +5,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import Testimonials from '../components/Testimonials'
-import Pricing from '../components/Pricing'
+// import Pricing from '../components/Pricing'
 // import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import Img from 'gatsby-image'
 
@@ -67,13 +67,13 @@ export const ProductPageTemplate = ({
                   <h3 className="has-text-weight-semibold is-size-2 has-text-centered product-header">
                     {main.heading}
                   </h3>
-                  <p>{main.description}</p>
+                  <p className="is-size-5" style={{ width: '80%', textAlign: 'center', marginLeft: '10%'}}>{main.description}</p>
               <Testimonials testimonials={testimonials} />
               <h2 className="has-text-weight-semibold is-size-2 has-text-centered product-header">
                 {pricing.heading}
               </h2>
-              <p className="is-size-5">{pricing.description}</p>
-              <Pricing data={pricing.plans} />
+              <p className="is-size-5" style={{ width: '80%', textAlign: 'center', marginLeft: '10%'}}>{pricing.description}</p>
+              <Img style={{ marginTop: '3em' }} fluid={pricing.image.childImageSharp.fluid} alt='matter pricing'/>
             </div>
           </div>
         </div>
@@ -102,7 +102,7 @@ ProductPageTemplate.propTypes = {
   pricing: PropTypes.shape({
     heading: PropTypes.string,
     description: PropTypes.string,
-    plans: PropTypes.array,
+    image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   }),
 }
 
@@ -190,11 +190,12 @@ export const productPageQuery = graphql`
         pricing {
           heading
           description
-          plans {
-            description
-            items
-            plan
-            price
+          image {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
           }
         }
       }
