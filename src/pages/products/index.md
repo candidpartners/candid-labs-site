@@ -42,7 +42,7 @@ intro:
         multiple migration approaches so that the right approach is chosen and
         understood by the entire team.
   heading: 60% of all cloud initiatives fail. None of ours have.
-  image: /img/even-volker-diff.webp
+  image: /img/Matter_Diff.webp
 main:
   heading: Cloud DevOps for the Enterprise
   description: >+
