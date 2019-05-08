@@ -43,13 +43,13 @@ const TemplateWrapper = ({ children }) => (
           <link
             rel="icon"
             type="image/png"
-            href="/img/favicon_16x16.png"
+            href="/img/32x32-01.png"
             sizes="32x32"
           />
           <link
             rel="icon"
             type="image/png"
-            href="/img/favicon_16x16.png"
+            href="/img/16x16-01.png"
             sizes="16x16"
           />
 
