@@ -47,6 +47,7 @@ class Slider extends React.Component {
             <div className="slider">
               <div className="slider-wrapper">
                 <Slide 
+                  index={currentSlide}
                   image={images[currentSlide].image}
                   heading={slideText[currentSlide].heading}
                   subheading={slideText[currentSlide].subheading}
